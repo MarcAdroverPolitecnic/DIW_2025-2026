@@ -1,0 +1,115 @@
+//Contenidor principal (.equip):
+//Display flex amb espai entre elements de 1.5rem
+//Padding de 2.5rem
+//Contingut justificat al centre
+//Fons de color verd fluix
+//
+//Targeta de membre (.membre-card):
+//Amplada de 18rem
+//Fons blau fluix
+//Border-radius de 0.5rem
+//Padding de 1.5rem
+//Alineació del text al centre
+//
+//Imatge (.avatar):
+//Amplada i altura de 7.5rem
+//Marge inferior de 1rem
+//Border de 0.25rem sòlid de color blau
+//Object-fit: cover (per mantenir les proporcions)
+//
+//Nom (.nom):
+//Color gris fosc
+//Mida de 1.5rem
+//Negreta
+//Marge inferior de 0.5rem
+//Càrrec (.carrec):
+//Color gris clar
+//Mida de 1rem
+//Marge inferior de 1rem
+//Xarxes socials (.xarxes):
+//Display flex
+//Justificat al centre amb gap de 0.75rem
+//Enllaços de xarxes (.xarxa-enllaç):
+//Display inline-block
+//Amplada i altura de 2.5rem
+//Border-radius del 50%
+//Fons groc fluix
+//Color gris clar
+//Line-height de 2.5rem (per centrar el text verticalment)
+//Transició suau: transition: all 0.3s ease
+//Sense decoració de text
+//Efecte hover de la targeta (&:hover):
+//Transform: translateY(-0.5rem)
+//Efecte hover dels enllaços de xarxes (&:hover):
+//Fons blau
+//Color blanc de lletra
+
+
+.equip {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2.5rem;
+  background-color: #d4f4dd;
+  flex-wrap: wrap;
+}
+
+.membre-card {
+  width: 18rem;
+  background-color: #cce5ff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.membre-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.avatar {
+  width: 7.5rem;
+  height: 7.5rem;
+  margin-bottom: 1rem;
+  border: 0.25rem solid #4a90e2;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nom {
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+
+.carrec {
+  color: #777777;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.xarxes {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.xarxa-enllaç {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #fff3b0;
+  color: #777777;
+  line-height: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.xarxa-enllaç:hover {
+  background-color: #4a90e2;
+  color: #ffffff;
+}

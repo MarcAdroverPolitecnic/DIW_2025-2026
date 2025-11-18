@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Generador de QR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body style="font-family: system-ui; max-width: 720px; margin: 2rem auto;">
+<h1>QR desde URL</h1>
+<form id="form">
+    <input id="u" type="url" placeholder="https://ejemplo.com" required
+           style="width: min(600px, 100%); padding: .5rem;" />
+    <button type="submit" style="padding: .5rem 1rem;">Generar</button>
+</form>
+
+<p>Resultado:</p>
+<img id="qr" alt="QR generado" style="max-width: 300px; border: 1px solid #ddd; padding: 8px;" />
+
+<script>
+    const form = document.getElementById('form');
+    const input = document.getElementById('u');
+    const img = document.getElementById('qr');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const v = input.value.trim();
+        if (!v) return;
+        img.src = '/qr?url=' + encodeURIComponent(v);
+        img.alt = 'QR de ' + v;
+    });
+</script>
+</body>
+</html>

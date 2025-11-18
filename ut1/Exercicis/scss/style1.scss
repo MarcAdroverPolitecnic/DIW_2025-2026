@@ -1,0 +1,55 @@
+//Amplada de 300px, borde de 1px i padding de 1.5rem.
+//El títol ha de ser de color blau fosc (darkblue) i mida 1.5rem.
+//La descripció ha de ser de color gris i un tamany de lletra de 1 rem.
+//El preu ha de estar en negreta, color verd, i mida 2 rem.
+//El botó de compra ha de tenir el fons blau, text blanc i padding de 1rem i 1.5rem.
+//Quan es passi el ratolí pel botó, el fons ha de ser blau fosc (darkblue)
+
+$color-principal-fosc: darkblue;
+$color-text-secundari: gray;
+$color-blanc: white;
+$color-fons-principal: blue;
+$color-verd: green;
+$color-verd-obscur: darkgreen;
+
+$padding-targeta: 1.5rem;
+$amplada-targeta: 300px;
+$borde-targeta: 1px;
+
+$tamany-targeta-titol-font: 1.5rem;
+$tamany-targeta-descripcio-font: 1rem;
+$tamany-targeta-targeta-font: 2rem;
+
+$padding-boto-compra: 1rem 1.5rem;
+
+.targeta-producte{
+  width: $amplada-targeta;
+  border: $borde-targeta;
+  padding: $padding-targeta;
+}
+
+.targeta-producte .titol{
+  color: $color-principal-fosc;
+  font-size: $tamany-targeta-titol-font;
+}
+
+.targeta-producte .descripcio{
+  color: $color-text-secundari;
+  font-size: $tamany-targeta-descripcio-font;
+}
+
+.targeta-producte .preu{
+  font-weight: bold;
+  color: $color-verd;
+  font-size: $tamany-targeta-targeta-font;
+}
+
+.targeta-producte .boto-compra{
+  background-color: $color-fons-principal;
+  color: $color-blanc;
+  padding: $padding-boto-compra;
+}
+
+.boto-compra:hover{
+  background-color: $color-principal-fosc;
+}

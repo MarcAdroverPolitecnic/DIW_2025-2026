@@ -1,0 +1,367 @@
+@charset "UTF-8";
+.m-1 {
+  margin: 0rem;
+}
+
+.p-1 {
+  padding: 0rem;
+}
+
+.m-2 {
+  margin: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.25rem;
+}
+
+.m-3 {
+  margin: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.5rem;
+}
+
+.m-4 {
+  margin: 0.75rem;
+}
+
+.p-4 {
+  padding: 0.75rem;
+}
+
+.m-5 {
+  margin: 1rem;
+}
+
+.p-5 {
+  padding: 1rem;
+}
+
+.m-6 {
+  margin: 1.5rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.m-7 {
+  margin: 2rem;
+}
+
+.p-7 {
+  padding: 2rem;
+}
+
+.m-8 {
+  margin: 3rem;
+}
+
+.p-8 {
+  padding: 3rem;
+}
+
+.m-9 {
+  margin: 4rem;
+}
+
+.p-9 {
+  padding: 4rem;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-inline-grid {
+  display: inline-grid;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-contents {
+  display: contents;
+}
+
+.d-flow-root {
+  display: flow-root;
+}
+
+.posicio-static {
+  position: static;
+}
+
+.posicio-relative {
+  position: relative;
+}
+
+.posicio-absolute {
+  position: absolute;
+}
+
+.posicio-fixed {
+  position: fixed;
+}
+
+.posicio-sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.top-auto {
+  top: auto;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.right-auto {
+  right: auto;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.bottom-auto {
+  bottom: auto;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.left-auto {
+  left: auto;
+}
+
+.targeta-producte {
+  width: 300px;
+  padding: 1.5rem;
+  border: 1px;
+}
+.targeta-producte .titol {
+  color: #004d00;
+  font-size: 1.5rem;
+}
+.targeta-producte .descripcio {
+  color: gray;
+  font-size: 1rem;
+}
+.targeta-producte .preu {
+  font-weight: bold;
+  color: green;
+  font-size: 2rem;
+}
+.targeta-producte .boto-compra {
+  background-color: blue;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+.targeta-producte .boto-compra:hover {
+  background-color: #004d00;
+}
+
+.formulari {
+  width: 36rem;
+  padding: 2rem;
+  margin: auto;
+}
+.formulari .camp label {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.formulari .camp input, .formulari .camp textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.formulari .camp input:focus, .formulari .camp textarea:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+.formulari .camp textarea {
+  field-sizing: content;
+}
+.formulari .boto-enviar {
+  width: 100%;
+  padding: 1rem;
+  background-color: green;
+  color: white;
+  font-size: 1rem;
+}
+.formulari .boto-enviar:hover {
+  background-color: green;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.galeria .galeria-item {
+  width: 33%;
+  overflow: hidden;
+}
+.galeria .galeria-item img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: block;
+}
+.galeria .galeria-item img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  scale: 1.1;
+}
+.galeria .galeria-item .titol {
+  text-align: center;
+  margin-top: 1rem;
+  color: blue;
+  font-size: 18px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  height: 4rem;
+  padding: 0 2.5rem;
+  background-color: lightyellow;
+}
+.header .logo img {
+  width: 2.5rem;
+  display: block;
+}
+.header .navegacio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+.header .navegacio .enllaç {
+  position: relative;
+  padding: 0.625rem 0.9375rem;
+  color: gray;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.header .navegacio .enllaç::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.2rem;
+  width: 100%;
+  background-color: blue;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.header .navegacio .enllaç:hover {
+  color: blue;
+}
+.header .navegacio .enllaç:hover::after {
+  transform: scaleX(1);
+}
+.header .navegacio .enllaç.actiu {
+  color: blue;
+  font-weight: bold;
+}
+.header .navegacio .enllaç.actiu::after {
+  transform: scaleX(1);
+}
+
+.equip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2.5rem;
+  background-color: lightyellow;
+  flex-wrap: wrap;
+}
+.equip .membre-card {
+  width: 18rem;
+  padding: 1.5rem;
+  background-color: lightyellow;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.equip .membre-card:hover {
+  transform: translateY(-0.5rem);
+}
+.equip .membre-card .avatar {
+  width: 7.5rem;
+  height: 7.5rem;
+  margin-bottom: 1rem;
+  border: 0.25rem solid blue;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.equip .membre-card .nom {
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.equip .membre-card .carrec {
+  color: gray;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.equip .membre-card .xarxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+.equip .membre-card .xarxes .xarxa-enllaç {
+  background-color: lightyellow;
+  color: gray;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  line-height: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.equip .membre-card .xarxes .xarxa-enllaç:hover {
+  background-color: blue;
+  color: white;
+}
+
+/*# sourceMappingURL=juntarTot.css.map */

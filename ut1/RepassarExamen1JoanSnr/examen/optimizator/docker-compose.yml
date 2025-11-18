@@ -1,0 +1,41 @@
+services:
+  optimizer:
+    build: .
+    container_name: optimizer
+    volumes:
+      - ./media/imatges:/media
+      - ./media/imatgesMinimized:/output
+      - ./optimize.sh:/usr/local/bin/optimize.sh
+    command: ["/usr/local/bin/optimize.sh 100 90 80"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # Els 3 paràmetres: input_dir, output_dir, mida (exemple: 800px)
