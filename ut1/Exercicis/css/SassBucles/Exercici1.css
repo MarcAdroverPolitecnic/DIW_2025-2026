@@ -1,0 +1,1791 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 80px);
+  gap: 5px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.color-grid > div {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.color-r0-b0 {
+  background-color: rgb(0, 0, 0);
+}
+
+.color-r0-b5 {
+  background-color: rgb(0, 0, 12.75);
+}
+
+.color-r0-b10 {
+  background-color: rgb(0, 0, 25.5);
+}
+
+.color-r0-b15 {
+  background-color: rgb(0, 0, 38.25);
+}
+
+.color-r0-b20 {
+  background-color: rgb(0, 0, 51);
+}
+
+.color-r0-b25 {
+  background-color: rgb(0, 0, 63.75);
+}
+
+.color-r0-b30 {
+  background-color: rgb(0, 0, 76.5);
+}
+
+.color-r0-b35 {
+  background-color: rgb(0, 0, 89.25);
+}
+
+.color-r0-b40 {
+  background-color: rgb(0, 0, 102);
+}
+
+.color-r0-b45 {
+  background-color: rgb(0, 0, 114.75);
+}
+
+.color-r0-b50 {
+  background-color: rgb(0, 0, 127.5);
+}
+
+.color-r0-b55 {
+  background-color: rgb(0, 0, 140.25);
+}
+
+.color-r0-b60 {
+  background-color: rgb(0, 0, 153);
+}
+
+.color-r0-b65 {
+  background-color: rgb(0, 0, 165.75);
+}
+
+.color-r0-b70 {
+  background-color: rgb(0, 0, 178.5);
+}
+
+.color-r0-b75 {
+  background-color: rgb(0, 0, 191.25);
+}
+
+.color-r0-b80 {
+  background-color: rgb(0, 0, 204);
+}
+
+.color-r0-b85 {
+  background-color: rgb(0, 0, 216.75);
+}
+
+.color-r0-b90 {
+  background-color: rgb(0, 0, 229.5);
+}
+
+.color-r0-b95 {
+  background-color: rgb(0, 0, 242.25);
+}
+
+.color-r0-b100 {
+  background-color: rgb(0, 0, 255);
+}
+
+.color-r5-b0 {
+  background-color: rgb(12.75, 0, 0);
+}
+
+.color-r5-b5 {
+  background-color: rgb(12.75, 0, 12.75);
+}
+
+.color-r5-b10 {
+  background-color: rgb(12.75, 0, 25.5);
+}
+
+.color-r5-b15 {
+  background-color: rgb(12.75, 0, 38.25);
+}
+
+.color-r5-b20 {
+  background-color: rgb(12.75, 0, 51);
+}
+
+.color-r5-b25 {
+  background-color: rgb(12.75, 0, 63.75);
+}
+
+.color-r5-b30 {
+  background-color: rgb(12.75, 0, 76.5);
+}
+
+.color-r5-b35 {
+  background-color: rgb(12.75, 0, 89.25);
+}
+
+.color-r5-b40 {
+  background-color: rgb(12.75, 0, 102);
+}
+
+.color-r5-b45 {
+  background-color: rgb(12.75, 0, 114.75);
+}
+
+.color-r5-b50 {
+  background-color: rgb(12.75, 0, 127.5);
+}
+
+.color-r5-b55 {
+  background-color: rgb(12.75, 0, 140.25);
+}
+
+.color-r5-b60 {
+  background-color: rgb(12.75, 0, 153);
+}
+
+.color-r5-b65 {
+  background-color: rgb(12.75, 0, 165.75);
+}
+
+.color-r5-b70 {
+  background-color: rgb(12.75, 0, 178.5);
+}
+
+.color-r5-b75 {
+  background-color: rgb(12.75, 0, 191.25);
+}
+
+.color-r5-b80 {
+  background-color: rgb(12.75, 0, 204);
+}
+
+.color-r5-b85 {
+  background-color: rgb(12.75, 0, 216.75);
+}
+
+.color-r5-b90 {
+  background-color: rgb(12.75, 0, 229.5);
+}
+
+.color-r5-b95 {
+  background-color: rgb(12.75, 0, 242.25);
+}
+
+.color-r5-b100 {
+  background-color: rgb(12.75, 0, 255);
+}
+
+.color-r10-b0 {
+  background-color: rgb(25.5, 0, 0);
+}
+
+.color-r10-b5 {
+  background-color: rgb(25.5, 0, 12.75);
+}
+
+.color-r10-b10 {
+  background-color: rgb(25.5, 0, 25.5);
+}
+
+.color-r10-b15 {
+  background-color: rgb(25.5, 0, 38.25);
+}
+
+.color-r10-b20 {
+  background-color: rgb(25.5, 0, 51);
+}
+
+.color-r10-b25 {
+  background-color: rgb(25.5, 0, 63.75);
+}
+
+.color-r10-b30 {
+  background-color: rgb(25.5, 0, 76.5);
+}
+
+.color-r10-b35 {
+  background-color: rgb(25.5, 0, 89.25);
+}
+
+.color-r10-b40 {
+  background-color: rgb(25.5, 0, 102);
+}
+
+.color-r10-b45 {
+  background-color: rgb(25.5, 0, 114.75);
+}
+
+.color-r10-b50 {
+  background-color: rgb(25.5, 0, 127.5);
+}
+
+.color-r10-b55 {
+  background-color: rgb(25.5, 0, 140.25);
+}
+
+.color-r10-b60 {
+  background-color: rgb(25.5, 0, 153);
+}
+
+.color-r10-b65 {
+  background-color: rgb(25.5, 0, 165.75);
+}
+
+.color-r10-b70 {
+  background-color: rgb(25.5, 0, 178.5);
+}
+
+.color-r10-b75 {
+  background-color: rgb(25.5, 0, 191.25);
+}
+
+.color-r10-b80 {
+  background-color: rgb(25.5, 0, 204);
+}
+
+.color-r10-b85 {
+  background-color: rgb(25.5, 0, 216.75);
+}
+
+.color-r10-b90 {
+  background-color: rgb(25.5, 0, 229.5);
+}
+
+.color-r10-b95 {
+  background-color: rgb(25.5, 0, 242.25);
+}
+
+.color-r10-b100 {
+  background-color: rgb(25.5, 0, 255);
+}
+
+.color-r15-b0 {
+  background-color: rgb(38.25, 0, 0);
+}
+
+.color-r15-b5 {
+  background-color: rgb(38.25, 0, 12.75);
+}
+
+.color-r15-b10 {
+  background-color: rgb(38.25, 0, 25.5);
+}
+
+.color-r15-b15 {
+  background-color: rgb(38.25, 0, 38.25);
+}
+
+.color-r15-b20 {
+  background-color: rgb(38.25, 0, 51);
+}
+
+.color-r15-b25 {
+  background-color: rgb(38.25, 0, 63.75);
+}
+
+.color-r15-b30 {
+  background-color: rgb(38.25, 0, 76.5);
+}
+
+.color-r15-b35 {
+  background-color: rgb(38.25, 0, 89.25);
+}
+
+.color-r15-b40 {
+  background-color: rgb(38.25, 0, 102);
+}
+
+.color-r15-b45 {
+  background-color: rgb(38.25, 0, 114.75);
+}
+
+.color-r15-b50 {
+  background-color: rgb(38.25, 0, 127.5);
+}
+
+.color-r15-b55 {
+  background-color: rgb(38.25, 0, 140.25);
+}
+
+.color-r15-b60 {
+  background-color: rgb(38.25, 0, 153);
+}
+
+.color-r15-b65 {
+  background-color: rgb(38.25, 0, 165.75);
+}
+
+.color-r15-b70 {
+  background-color: rgb(38.25, 0, 178.5);
+}
+
+.color-r15-b75 {
+  background-color: rgb(38.25, 0, 191.25);
+}
+
+.color-r15-b80 {
+  background-color: rgb(38.25, 0, 204);
+}
+
+.color-r15-b85 {
+  background-color: rgb(38.25, 0, 216.75);
+}
+
+.color-r15-b90 {
+  background-color: rgb(38.25, 0, 229.5);
+}
+
+.color-r15-b95 {
+  background-color: rgb(38.25, 0, 242.25);
+}
+
+.color-r15-b100 {
+  background-color: rgb(38.25, 0, 255);
+}
+
+.color-r20-b0 {
+  background-color: rgb(51, 0, 0);
+}
+
+.color-r20-b5 {
+  background-color: rgb(51, 0, 12.75);
+}
+
+.color-r20-b10 {
+  background-color: rgb(51, 0, 25.5);
+}
+
+.color-r20-b15 {
+  background-color: rgb(51, 0, 38.25);
+}
+
+.color-r20-b20 {
+  background-color: rgb(51, 0, 51);
+}
+
+.color-r20-b25 {
+  background-color: rgb(51, 0, 63.75);
+}
+
+.color-r20-b30 {
+  background-color: rgb(51, 0, 76.5);
+}
+
+.color-r20-b35 {
+  background-color: rgb(51, 0, 89.25);
+}
+
+.color-r20-b40 {
+  background-color: rgb(51, 0, 102);
+}
+
+.color-r20-b45 {
+  background-color: rgb(51, 0, 114.75);
+}
+
+.color-r20-b50 {
+  background-color: rgb(51, 0, 127.5);
+}
+
+.color-r20-b55 {
+  background-color: rgb(51, 0, 140.25);
+}
+
+.color-r20-b60 {
+  background-color: rgb(51, 0, 153);
+}
+
+.color-r20-b65 {
+  background-color: rgb(51, 0, 165.75);
+}
+
+.color-r20-b70 {
+  background-color: rgb(51, 0, 178.5);
+}
+
+.color-r20-b75 {
+  background-color: rgb(51, 0, 191.25);
+}
+
+.color-r20-b80 {
+  background-color: rgb(51, 0, 204);
+}
+
+.color-r20-b85 {
+  background-color: rgb(51, 0, 216.75);
+}
+
+.color-r20-b90 {
+  background-color: rgb(51, 0, 229.5);
+}
+
+.color-r20-b95 {
+  background-color: rgb(51, 0, 242.25);
+}
+
+.color-r20-b100 {
+  background-color: rgb(51, 0, 255);
+}
+
+.color-r25-b0 {
+  background-color: rgb(63.75, 0, 0);
+}
+
+.color-r25-b5 {
+  background-color: rgb(63.75, 0, 12.75);
+}
+
+.color-r25-b10 {
+  background-color: rgb(63.75, 0, 25.5);
+}
+
+.color-r25-b15 {
+  background-color: rgb(63.75, 0, 38.25);
+}
+
+.color-r25-b20 {
+  background-color: rgb(63.75, 0, 51);
+}
+
+.color-r25-b25 {
+  background-color: rgb(63.75, 0, 63.75);
+}
+
+.color-r25-b30 {
+  background-color: rgb(63.75, 0, 76.5);
+}
+
+.color-r25-b35 {
+  background-color: rgb(63.75, 0, 89.25);
+}
+
+.color-r25-b40 {
+  background-color: rgb(63.75, 0, 102);
+}
+
+.color-r25-b45 {
+  background-color: rgb(63.75, 0, 114.75);
+}
+
+.color-r25-b50 {
+  background-color: rgb(63.75, 0, 127.5);
+}
+
+.color-r25-b55 {
+  background-color: rgb(63.75, 0, 140.25);
+}
+
+.color-r25-b60 {
+  background-color: rgb(63.75, 0, 153);
+}
+
+.color-r25-b65 {
+  background-color: rgb(63.75, 0, 165.75);
+}
+
+.color-r25-b70 {
+  background-color: rgb(63.75, 0, 178.5);
+}
+
+.color-r25-b75 {
+  background-color: rgb(63.75, 0, 191.25);
+}
+
+.color-r25-b80 {
+  background-color: rgb(63.75, 0, 204);
+}
+
+.color-r25-b85 {
+  background-color: rgb(63.75, 0, 216.75);
+}
+
+.color-r25-b90 {
+  background-color: rgb(63.75, 0, 229.5);
+}
+
+.color-r25-b95 {
+  background-color: rgb(63.75, 0, 242.25);
+}
+
+.color-r25-b100 {
+  background-color: rgb(63.75, 0, 255);
+}
+
+.color-r30-b0 {
+  background-color: rgb(76.5, 0, 0);
+}
+
+.color-r30-b5 {
+  background-color: rgb(76.5, 0, 12.75);
+}
+
+.color-r30-b10 {
+  background-color: rgb(76.5, 0, 25.5);
+}
+
+.color-r30-b15 {
+  background-color: rgb(76.5, 0, 38.25);
+}
+
+.color-r30-b20 {
+  background-color: rgb(76.5, 0, 51);
+}
+
+.color-r30-b25 {
+  background-color: rgb(76.5, 0, 63.75);
+}
+
+.color-r30-b30 {
+  background-color: rgb(76.5, 0, 76.5);
+}
+
+.color-r30-b35 {
+  background-color: rgb(76.5, 0, 89.25);
+}
+
+.color-r30-b40 {
+  background-color: rgb(76.5, 0, 102);
+}
+
+.color-r30-b45 {
+  background-color: rgb(76.5, 0, 114.75);
+}
+
+.color-r30-b50 {
+  background-color: rgb(76.5, 0, 127.5);
+}
+
+.color-r30-b55 {
+  background-color: rgb(76.5, 0, 140.25);
+}
+
+.color-r30-b60 {
+  background-color: rgb(76.5, 0, 153);
+}
+
+.color-r30-b65 {
+  background-color: rgb(76.5, 0, 165.75);
+}
+
+.color-r30-b70 {
+  background-color: rgb(76.5, 0, 178.5);
+}
+
+.color-r30-b75 {
+  background-color: rgb(76.5, 0, 191.25);
+}
+
+.color-r30-b80 {
+  background-color: rgb(76.5, 0, 204);
+}
+
+.color-r30-b85 {
+  background-color: rgb(76.5, 0, 216.75);
+}
+
+.color-r30-b90 {
+  background-color: rgb(76.5, 0, 229.5);
+}
+
+.color-r30-b95 {
+  background-color: rgb(76.5, 0, 242.25);
+}
+
+.color-r30-b100 {
+  background-color: rgb(76.5, 0, 255);
+}
+
+.color-r35-b0 {
+  background-color: rgb(89.25, 0, 0);
+}
+
+.color-r35-b5 {
+  background-color: rgb(89.25, 0, 12.75);
+}
+
+.color-r35-b10 {
+  background-color: rgb(89.25, 0, 25.5);
+}
+
+.color-r35-b15 {
+  background-color: rgb(89.25, 0, 38.25);
+}
+
+.color-r35-b20 {
+  background-color: rgb(89.25, 0, 51);
+}
+
+.color-r35-b25 {
+  background-color: rgb(89.25, 0, 63.75);
+}
+
+.color-r35-b30 {
+  background-color: rgb(89.25, 0, 76.5);
+}
+
+.color-r35-b35 {
+  background-color: rgb(89.25, 0, 89.25);
+}
+
+.color-r35-b40 {
+  background-color: rgb(89.25, 0, 102);
+}
+
+.color-r35-b45 {
+  background-color: rgb(89.25, 0, 114.75);
+}
+
+.color-r35-b50 {
+  background-color: rgb(89.25, 0, 127.5);
+}
+
+.color-r35-b55 {
+  background-color: rgb(89.25, 0, 140.25);
+}
+
+.color-r35-b60 {
+  background-color: rgb(89.25, 0, 153);
+}
+
+.color-r35-b65 {
+  background-color: rgb(89.25, 0, 165.75);
+}
+
+.color-r35-b70 {
+  background-color: rgb(89.25, 0, 178.5);
+}
+
+.color-r35-b75 {
+  background-color: rgb(89.25, 0, 191.25);
+}
+
+.color-r35-b80 {
+  background-color: rgb(89.25, 0, 204);
+}
+
+.color-r35-b85 {
+  background-color: rgb(89.25, 0, 216.75);
+}
+
+.color-r35-b90 {
+  background-color: rgb(89.25, 0, 229.5);
+}
+
+.color-r35-b95 {
+  background-color: rgb(89.25, 0, 242.25);
+}
+
+.color-r35-b100 {
+  background-color: rgb(89.25, 0, 255);
+}
+
+.color-r40-b0 {
+  background-color: rgb(102, 0, 0);
+}
+
+.color-r40-b5 {
+  background-color: rgb(102, 0, 12.75);
+}
+
+.color-r40-b10 {
+  background-color: rgb(102, 0, 25.5);
+}
+
+.color-r40-b15 {
+  background-color: rgb(102, 0, 38.25);
+}
+
+.color-r40-b20 {
+  background-color: rgb(102, 0, 51);
+}
+
+.color-r40-b25 {
+  background-color: rgb(102, 0, 63.75);
+}
+
+.color-r40-b30 {
+  background-color: rgb(102, 0, 76.5);
+}
+
+.color-r40-b35 {
+  background-color: rgb(102, 0, 89.25);
+}
+
+.color-r40-b40 {
+  background-color: rgb(102, 0, 102);
+}
+
+.color-r40-b45 {
+  background-color: rgb(102, 0, 114.75);
+}
+
+.color-r40-b50 {
+  background-color: rgb(102, 0, 127.5);
+}
+
+.color-r40-b55 {
+  background-color: rgb(102, 0, 140.25);
+}
+
+.color-r40-b60 {
+  background-color: rgb(102, 0, 153);
+}
+
+.color-r40-b65 {
+  background-color: rgb(102, 0, 165.75);
+}
+
+.color-r40-b70 {
+  background-color: rgb(102, 0, 178.5);
+}
+
+.color-r40-b75 {
+  background-color: rgb(102, 0, 191.25);
+}
+
+.color-r40-b80 {
+  background-color: rgb(102, 0, 204);
+}
+
+.color-r40-b85 {
+  background-color: rgb(102, 0, 216.75);
+}
+
+.color-r40-b90 {
+  background-color: rgb(102, 0, 229.5);
+}
+
+.color-r40-b95 {
+  background-color: rgb(102, 0, 242.25);
+}
+
+.color-r40-b100 {
+  background-color: rgb(102, 0, 255);
+}
+
+.color-r45-b0 {
+  background-color: rgb(114.75, 0, 0);
+}
+
+.color-r45-b5 {
+  background-color: rgb(114.75, 0, 12.75);
+}
+
+.color-r45-b10 {
+  background-color: rgb(114.75, 0, 25.5);
+}
+
+.color-r45-b15 {
+  background-color: rgb(114.75, 0, 38.25);
+}
+
+.color-r45-b20 {
+  background-color: rgb(114.75, 0, 51);
+}
+
+.color-r45-b25 {
+  background-color: rgb(114.75, 0, 63.75);
+}
+
+.color-r45-b30 {
+  background-color: rgb(114.75, 0, 76.5);
+}
+
+.color-r45-b35 {
+  background-color: rgb(114.75, 0, 89.25);
+}
+
+.color-r45-b40 {
+  background-color: rgb(114.75, 0, 102);
+}
+
+.color-r45-b45 {
+  background-color: rgb(114.75, 0, 114.75);
+}
+
+.color-r45-b50 {
+  background-color: rgb(114.75, 0, 127.5);
+}
+
+.color-r45-b55 {
+  background-color: rgb(114.75, 0, 140.25);
+}
+
+.color-r45-b60 {
+  background-color: rgb(114.75, 0, 153);
+}
+
+.color-r45-b65 {
+  background-color: rgb(114.75, 0, 165.75);
+}
+
+.color-r45-b70 {
+  background-color: rgb(114.75, 0, 178.5);
+}
+
+.color-r45-b75 {
+  background-color: rgb(114.75, 0, 191.25);
+}
+
+.color-r45-b80 {
+  background-color: rgb(114.75, 0, 204);
+}
+
+.color-r45-b85 {
+  background-color: rgb(114.75, 0, 216.75);
+}
+
+.color-r45-b90 {
+  background-color: rgb(114.75, 0, 229.5);
+}
+
+.color-r45-b95 {
+  background-color: rgb(114.75, 0, 242.25);
+}
+
+.color-r45-b100 {
+  background-color: rgb(114.75, 0, 255);
+}
+
+.color-r50-b0 {
+  background-color: rgb(127.5, 0, 0);
+}
+
+.color-r50-b5 {
+  background-color: rgb(127.5, 0, 12.75);
+}
+
+.color-r50-b10 {
+  background-color: rgb(127.5, 0, 25.5);
+}
+
+.color-r50-b15 {
+  background-color: rgb(127.5, 0, 38.25);
+}
+
+.color-r50-b20 {
+  background-color: rgb(127.5, 0, 51);
+}
+
+.color-r50-b25 {
+  background-color: rgb(127.5, 0, 63.75);
+}
+
+.color-r50-b30 {
+  background-color: rgb(127.5, 0, 76.5);
+}
+
+.color-r50-b35 {
+  background-color: rgb(127.5, 0, 89.25);
+}
+
+.color-r50-b40 {
+  background-color: rgb(127.5, 0, 102);
+}
+
+.color-r50-b45 {
+  background-color: rgb(127.5, 0, 114.75);
+}
+
+.color-r50-b50 {
+  background-color: rgb(127.5, 0, 127.5);
+}
+
+.color-r50-b55 {
+  background-color: rgb(127.5, 0, 140.25);
+}
+
+.color-r50-b60 {
+  background-color: rgb(127.5, 0, 153);
+}
+
+.color-r50-b65 {
+  background-color: rgb(127.5, 0, 165.75);
+}
+
+.color-r50-b70 {
+  background-color: rgb(127.5, 0, 178.5);
+}
+
+.color-r50-b75 {
+  background-color: rgb(127.5, 0, 191.25);
+}
+
+.color-r50-b80 {
+  background-color: rgb(127.5, 0, 204);
+}
+
+.color-r50-b85 {
+  background-color: rgb(127.5, 0, 216.75);
+}
+
+.color-r50-b90 {
+  background-color: rgb(127.5, 0, 229.5);
+}
+
+.color-r50-b95 {
+  background-color: rgb(127.5, 0, 242.25);
+}
+
+.color-r50-b100 {
+  background-color: rgb(127.5, 0, 255);
+}
+
+.color-r55-b0 {
+  background-color: rgb(140.25, 0, 0);
+}
+
+.color-r55-b5 {
+  background-color: rgb(140.25, 0, 12.75);
+}
+
+.color-r55-b10 {
+  background-color: rgb(140.25, 0, 25.5);
+}
+
+.color-r55-b15 {
+  background-color: rgb(140.25, 0, 38.25);
+}
+
+.color-r55-b20 {
+  background-color: rgb(140.25, 0, 51);
+}
+
+.color-r55-b25 {
+  background-color: rgb(140.25, 0, 63.75);
+}
+
+.color-r55-b30 {
+  background-color: rgb(140.25, 0, 76.5);
+}
+
+.color-r55-b35 {
+  background-color: rgb(140.25, 0, 89.25);
+}
+
+.color-r55-b40 {
+  background-color: rgb(140.25, 0, 102);
+}
+
+.color-r55-b45 {
+  background-color: rgb(140.25, 0, 114.75);
+}
+
+.color-r55-b50 {
+  background-color: rgb(140.25, 0, 127.5);
+}
+
+.color-r55-b55 {
+  background-color: rgb(140.25, 0, 140.25);
+}
+
+.color-r55-b60 {
+  background-color: rgb(140.25, 0, 153);
+}
+
+.color-r55-b65 {
+  background-color: rgb(140.25, 0, 165.75);
+}
+
+.color-r55-b70 {
+  background-color: rgb(140.25, 0, 178.5);
+}
+
+.color-r55-b75 {
+  background-color: rgb(140.25, 0, 191.25);
+}
+
+.color-r55-b80 {
+  background-color: rgb(140.25, 0, 204);
+}
+
+.color-r55-b85 {
+  background-color: rgb(140.25, 0, 216.75);
+}
+
+.color-r55-b90 {
+  background-color: rgb(140.25, 0, 229.5);
+}
+
+.color-r55-b95 {
+  background-color: rgb(140.25, 0, 242.25);
+}
+
+.color-r55-b100 {
+  background-color: rgb(140.25, 0, 255);
+}
+
+.color-r60-b0 {
+  background-color: rgb(153, 0, 0);
+}
+
+.color-r60-b5 {
+  background-color: rgb(153, 0, 12.75);
+}
+
+.color-r60-b10 {
+  background-color: rgb(153, 0, 25.5);
+}
+
+.color-r60-b15 {
+  background-color: rgb(153, 0, 38.25);
+}
+
+.color-r60-b20 {
+  background-color: rgb(153, 0, 51);
+}
+
+.color-r60-b25 {
+  background-color: rgb(153, 0, 63.75);
+}
+
+.color-r60-b30 {
+  background-color: rgb(153, 0, 76.5);
+}
+
+.color-r60-b35 {
+  background-color: rgb(153, 0, 89.25);
+}
+
+.color-r60-b40 {
+  background-color: rgb(153, 0, 102);
+}
+
+.color-r60-b45 {
+  background-color: rgb(153, 0, 114.75);
+}
+
+.color-r60-b50 {
+  background-color: rgb(153, 0, 127.5);
+}
+
+.color-r60-b55 {
+  background-color: rgb(153, 0, 140.25);
+}
+
+.color-r60-b60 {
+  background-color: rgb(153, 0, 153);
+}
+
+.color-r60-b65 {
+  background-color: rgb(153, 0, 165.75);
+}
+
+.color-r60-b70 {
+  background-color: rgb(153, 0, 178.5);
+}
+
+.color-r60-b75 {
+  background-color: rgb(153, 0, 191.25);
+}
+
+.color-r60-b80 {
+  background-color: rgb(153, 0, 204);
+}
+
+.color-r60-b85 {
+  background-color: rgb(153, 0, 216.75);
+}
+
+.color-r60-b90 {
+  background-color: rgb(153, 0, 229.5);
+}
+
+.color-r60-b95 {
+  background-color: rgb(153, 0, 242.25);
+}
+
+.color-r60-b100 {
+  background-color: rgb(153, 0, 255);
+}
+
+.color-r65-b0 {
+  background-color: rgb(165.75, 0, 0);
+}
+
+.color-r65-b5 {
+  background-color: rgb(165.75, 0, 12.75);
+}
+
+.color-r65-b10 {
+  background-color: rgb(165.75, 0, 25.5);
+}
+
+.color-r65-b15 {
+  background-color: rgb(165.75, 0, 38.25);
+}
+
+.color-r65-b20 {
+  background-color: rgb(165.75, 0, 51);
+}
+
+.color-r65-b25 {
+  background-color: rgb(165.75, 0, 63.75);
+}
+
+.color-r65-b30 {
+  background-color: rgb(165.75, 0, 76.5);
+}
+
+.color-r65-b35 {
+  background-color: rgb(165.75, 0, 89.25);
+}
+
+.color-r65-b40 {
+  background-color: rgb(165.75, 0, 102);
+}
+
+.color-r65-b45 {
+  background-color: rgb(165.75, 0, 114.75);
+}
+
+.color-r65-b50 {
+  background-color: rgb(165.75, 0, 127.5);
+}
+
+.color-r65-b55 {
+  background-color: rgb(165.75, 0, 140.25);
+}
+
+.color-r65-b60 {
+  background-color: rgb(165.75, 0, 153);
+}
+
+.color-r65-b65 {
+  background-color: rgb(165.75, 0, 165.75);
+}
+
+.color-r65-b70 {
+  background-color: rgb(165.75, 0, 178.5);
+}
+
+.color-r65-b75 {
+  background-color: rgb(165.75, 0, 191.25);
+}
+
+.color-r65-b80 {
+  background-color: rgb(165.75, 0, 204);
+}
+
+.color-r65-b85 {
+  background-color: rgb(165.75, 0, 216.75);
+}
+
+.color-r65-b90 {
+  background-color: rgb(165.75, 0, 229.5);
+}
+
+.color-r65-b95 {
+  background-color: rgb(165.75, 0, 242.25);
+}
+
+.color-r65-b100 {
+  background-color: rgb(165.75, 0, 255);
+}
+
+.color-r70-b0 {
+  background-color: rgb(178.5, 0, 0);
+}
+
+.color-r70-b5 {
+  background-color: rgb(178.5, 0, 12.75);
+}
+
+.color-r70-b10 {
+  background-color: rgb(178.5, 0, 25.5);
+}
+
+.color-r70-b15 {
+  background-color: rgb(178.5, 0, 38.25);
+}
+
+.color-r70-b20 {
+  background-color: rgb(178.5, 0, 51);
+}
+
+.color-r70-b25 {
+  background-color: rgb(178.5, 0, 63.75);
+}
+
+.color-r70-b30 {
+  background-color: rgb(178.5, 0, 76.5);
+}
+
+.color-r70-b35 {
+  background-color: rgb(178.5, 0, 89.25);
+}
+
+.color-r70-b40 {
+  background-color: rgb(178.5, 0, 102);
+}
+
+.color-r70-b45 {
+  background-color: rgb(178.5, 0, 114.75);
+}
+
+.color-r70-b50 {
+  background-color: rgb(178.5, 0, 127.5);
+}
+
+.color-r70-b55 {
+  background-color: rgb(178.5, 0, 140.25);
+}
+
+.color-r70-b60 {
+  background-color: rgb(178.5, 0, 153);
+}
+
+.color-r70-b65 {
+  background-color: rgb(178.5, 0, 165.75);
+}
+
+.color-r70-b70 {
+  background-color: rgb(178.5, 0, 178.5);
+}
+
+.color-r70-b75 {
+  background-color: rgb(178.5, 0, 191.25);
+}
+
+.color-r70-b80 {
+  background-color: rgb(178.5, 0, 204);
+}
+
+.color-r70-b85 {
+  background-color: rgb(178.5, 0, 216.75);
+}
+
+.color-r70-b90 {
+  background-color: rgb(178.5, 0, 229.5);
+}
+
+.color-r70-b95 {
+  background-color: rgb(178.5, 0, 242.25);
+}
+
+.color-r70-b100 {
+  background-color: rgb(178.5, 0, 255);
+}
+
+.color-r75-b0 {
+  background-color: rgb(191.25, 0, 0);
+}
+
+.color-r75-b5 {
+  background-color: rgb(191.25, 0, 12.75);
+}
+
+.color-r75-b10 {
+  background-color: rgb(191.25, 0, 25.5);
+}
+
+.color-r75-b15 {
+  background-color: rgb(191.25, 0, 38.25);
+}
+
+.color-r75-b20 {
+  background-color: rgb(191.25, 0, 51);
+}
+
+.color-r75-b25 {
+  background-color: rgb(191.25, 0, 63.75);
+}
+
+.color-r75-b30 {
+  background-color: rgb(191.25, 0, 76.5);
+}
+
+.color-r75-b35 {
+  background-color: rgb(191.25, 0, 89.25);
+}
+
+.color-r75-b40 {
+  background-color: rgb(191.25, 0, 102);
+}
+
+.color-r75-b45 {
+  background-color: rgb(191.25, 0, 114.75);
+}
+
+.color-r75-b50 {
+  background-color: rgb(191.25, 0, 127.5);
+}
+
+.color-r75-b55 {
+  background-color: rgb(191.25, 0, 140.25);
+}
+
+.color-r75-b60 {
+  background-color: rgb(191.25, 0, 153);
+}
+
+.color-r75-b65 {
+  background-color: rgb(191.25, 0, 165.75);
+}
+
+.color-r75-b70 {
+  background-color: rgb(191.25, 0, 178.5);
+}
+
+.color-r75-b75 {
+  background-color: rgb(191.25, 0, 191.25);
+}
+
+.color-r75-b80 {
+  background-color: rgb(191.25, 0, 204);
+}
+
+.color-r75-b85 {
+  background-color: rgb(191.25, 0, 216.75);
+}
+
+.color-r75-b90 {
+  background-color: rgb(191.25, 0, 229.5);
+}
+
+.color-r75-b95 {
+  background-color: rgb(191.25, 0, 242.25);
+}
+
+.color-r75-b100 {
+  background-color: rgb(191.25, 0, 255);
+}
+
+.color-r80-b0 {
+  background-color: rgb(204, 0, 0);
+}
+
+.color-r80-b5 {
+  background-color: rgb(204, 0, 12.75);
+}
+
+.color-r80-b10 {
+  background-color: rgb(204, 0, 25.5);
+}
+
+.color-r80-b15 {
+  background-color: rgb(204, 0, 38.25);
+}
+
+.color-r80-b20 {
+  background-color: rgb(204, 0, 51);
+}
+
+.color-r80-b25 {
+  background-color: rgb(204, 0, 63.75);
+}
+
+.color-r80-b30 {
+  background-color: rgb(204, 0, 76.5);
+}
+
+.color-r80-b35 {
+  background-color: rgb(204, 0, 89.25);
+}
+
+.color-r80-b40 {
+  background-color: rgb(204, 0, 102);
+}
+
+.color-r80-b45 {
+  background-color: rgb(204, 0, 114.75);
+}
+
+.color-r80-b50 {
+  background-color: rgb(204, 0, 127.5);
+}
+
+.color-r80-b55 {
+  background-color: rgb(204, 0, 140.25);
+}
+
+.color-r80-b60 {
+  background-color: rgb(204, 0, 153);
+}
+
+.color-r80-b65 {
+  background-color: rgb(204, 0, 165.75);
+}
+
+.color-r80-b70 {
+  background-color: rgb(204, 0, 178.5);
+}
+
+.color-r80-b75 {
+  background-color: rgb(204, 0, 191.25);
+}
+
+.color-r80-b80 {
+  background-color: rgb(204, 0, 204);
+}
+
+.color-r80-b85 {
+  background-color: rgb(204, 0, 216.75);
+}
+
+.color-r80-b90 {
+  background-color: rgb(204, 0, 229.5);
+}
+
+.color-r80-b95 {
+  background-color: rgb(204, 0, 242.25);
+}
+
+.color-r80-b100 {
+  background-color: rgb(204, 0, 255);
+}
+
+.color-r85-b0 {
+  background-color: rgb(216.75, 0, 0);
+}
+
+.color-r85-b5 {
+  background-color: rgb(216.75, 0, 12.75);
+}
+
+.color-r85-b10 {
+  background-color: rgb(216.75, 0, 25.5);
+}
+
+.color-r85-b15 {
+  background-color: rgb(216.75, 0, 38.25);
+}
+
+.color-r85-b20 {
+  background-color: rgb(216.75, 0, 51);
+}
+
+.color-r85-b25 {
+  background-color: rgb(216.75, 0, 63.75);
+}
+
+.color-r85-b30 {
+  background-color: rgb(216.75, 0, 76.5);
+}
+
+.color-r85-b35 {
+  background-color: rgb(216.75, 0, 89.25);
+}
+
+.color-r85-b40 {
+  background-color: rgb(216.75, 0, 102);
+}
+
+.color-r85-b45 {
+  background-color: rgb(216.75, 0, 114.75);
+}
+
+.color-r85-b50 {
+  background-color: rgb(216.75, 0, 127.5);
+}
+
+.color-r85-b55 {
+  background-color: rgb(216.75, 0, 140.25);
+}
+
+.color-r85-b60 {
+  background-color: rgb(216.75, 0, 153);
+}
+
+.color-r85-b65 {
+  background-color: rgb(216.75, 0, 165.75);
+}
+
+.color-r85-b70 {
+  background-color: rgb(216.75, 0, 178.5);
+}
+
+.color-r85-b75 {
+  background-color: rgb(216.75, 0, 191.25);
+}
+
+.color-r85-b80 {
+  background-color: rgb(216.75, 0, 204);
+}
+
+.color-r85-b85 {
+  background-color: rgb(216.75, 0, 216.75);
+}
+
+.color-r85-b90 {
+  background-color: rgb(216.75, 0, 229.5);
+}
+
+.color-r85-b95 {
+  background-color: rgb(216.75, 0, 242.25);
+}
+
+.color-r85-b100 {
+  background-color: rgb(216.75, 0, 255);
+}
+
+.color-r90-b0 {
+  background-color: rgb(229.5, 0, 0);
+}
+
+.color-r90-b5 {
+  background-color: rgb(229.5, 0, 12.75);
+}
+
+.color-r90-b10 {
+  background-color: rgb(229.5, 0, 25.5);
+}
+
+.color-r90-b15 {
+  background-color: rgb(229.5, 0, 38.25);
+}
+
+.color-r90-b20 {
+  background-color: rgb(229.5, 0, 51);
+}
+
+.color-r90-b25 {
+  background-color: rgb(229.5, 0, 63.75);
+}
+
+.color-r90-b30 {
+  background-color: rgb(229.5, 0, 76.5);
+}
+
+.color-r90-b35 {
+  background-color: rgb(229.5, 0, 89.25);
+}
+
+.color-r90-b40 {
+  background-color: rgb(229.5, 0, 102);
+}
+
+.color-r90-b45 {
+  background-color: rgb(229.5, 0, 114.75);
+}
+
+.color-r90-b50 {
+  background-color: rgb(229.5, 0, 127.5);
+}
+
+.color-r90-b55 {
+  background-color: rgb(229.5, 0, 140.25);
+}
+
+.color-r90-b60 {
+  background-color: rgb(229.5, 0, 153);
+}
+
+.color-r90-b65 {
+  background-color: rgb(229.5, 0, 165.75);
+}
+
+.color-r90-b70 {
+  background-color: rgb(229.5, 0, 178.5);
+}
+
+.color-r90-b75 {
+  background-color: rgb(229.5, 0, 191.25);
+}
+
+.color-r90-b80 {
+  background-color: rgb(229.5, 0, 204);
+}
+
+.color-r90-b85 {
+  background-color: rgb(229.5, 0, 216.75);
+}
+
+.color-r90-b90 {
+  background-color: rgb(229.5, 0, 229.5);
+}
+
+.color-r90-b95 {
+  background-color: rgb(229.5, 0, 242.25);
+}
+
+.color-r90-b100 {
+  background-color: rgb(229.5, 0, 255);
+}
+
+.color-r95-b0 {
+  background-color: rgb(242.25, 0, 0);
+}
+
+.color-r95-b5 {
+  background-color: rgb(242.25, 0, 12.75);
+}
+
+.color-r95-b10 {
+  background-color: rgb(242.25, 0, 25.5);
+}
+
+.color-r95-b15 {
+  background-color: rgb(242.25, 0, 38.25);
+}
+
+.color-r95-b20 {
+  background-color: rgb(242.25, 0, 51);
+}
+
+.color-r95-b25 {
+  background-color: rgb(242.25, 0, 63.75);
+}
+
+.color-r95-b30 {
+  background-color: rgb(242.25, 0, 76.5);
+}
+
+.color-r95-b35 {
+  background-color: rgb(242.25, 0, 89.25);
+}
+
+.color-r95-b40 {
+  background-color: rgb(242.25, 0, 102);
+}
+
+.color-r95-b45 {
+  background-color: rgb(242.25, 0, 114.75);
+}
+
+.color-r95-b50 {
+  background-color: rgb(242.25, 0, 127.5);
+}
+
+.color-r95-b55 {
+  background-color: rgb(242.25, 0, 140.25);
+}
+
+.color-r95-b60 {
+  background-color: rgb(242.25, 0, 153);
+}
+
+.color-r95-b65 {
+  background-color: rgb(242.25, 0, 165.75);
+}
+
+.color-r95-b70 {
+  background-color: rgb(242.25, 0, 178.5);
+}
+
+.color-r95-b75 {
+  background-color: rgb(242.25, 0, 191.25);
+}
+
+.color-r95-b80 {
+  background-color: rgb(242.25, 0, 204);
+}
+
+.color-r95-b85 {
+  background-color: rgb(242.25, 0, 216.75);
+}
+
+.color-r95-b90 {
+  background-color: rgb(242.25, 0, 229.5);
+}
+
+.color-r95-b95 {
+  background-color: rgb(242.25, 0, 242.25);
+}
+
+.color-r95-b100 {
+  background-color: rgb(242.25, 0, 255);
+}
+
+.color-r100-b0 {
+  background-color: rgb(255, 0, 0);
+}
+
+.color-r100-b5 {
+  background-color: rgb(255, 0, 12.75);
+}
+
+.color-r100-b10 {
+  background-color: rgb(255, 0, 25.5);
+}
+
+.color-r100-b15 {
+  background-color: rgb(255, 0, 38.25);
+}
+
+.color-r100-b20 {
+  background-color: rgb(255, 0, 51);
+}
+
+.color-r100-b25 {
+  background-color: rgb(255, 0, 63.75);
+}
+
+.color-r100-b30 {
+  background-color: rgb(255, 0, 76.5);
+}
+
+.color-r100-b35 {
+  background-color: rgb(255, 0, 89.25);
+}
+
+.color-r100-b40 {
+  background-color: rgb(255, 0, 102);
+}
+
+.color-r100-b45 {
+  background-color: rgb(255, 0, 114.75);
+}
+
+.color-r100-b50 {
+  background-color: rgb(255, 0, 127.5);
+}
+
+.color-r100-b55 {
+  background-color: rgb(255, 0, 140.25);
+}
+
+.color-r100-b60 {
+  background-color: rgb(255, 0, 153);
+}
+
+.color-r100-b65 {
+  background-color: rgb(255, 0, 165.75);
+}
+
+.color-r100-b70 {
+  background-color: rgb(255, 0, 178.5);
+}
+
+.color-r100-b75 {
+  background-color: rgb(255, 0, 191.25);
+}
+
+.color-r100-b80 {
+  background-color: rgb(255, 0, 204);
+}
+
+.color-r100-b85 {
+  background-color: rgb(255, 0, 216.75);
+}
+
+.color-r100-b90 {
+  background-color: rgb(255, 0, 229.5);
+}
+
+.color-r100-b95 {
+  background-color: rgb(255, 0, 242.25);
+}
+
+.color-r100-b100 {
+  background-color: rgb(255, 0, 255);
+}
+
+/*# sourceMappingURL=Exercici1.css.map */

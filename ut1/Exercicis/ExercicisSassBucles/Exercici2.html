@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 1 - Sistema de Graella</title>
+    <link rel="stylesheet" href="../css/SassBucles/Exercici2.css">
+</head>
+<body>
+<div class="container">
+    <h1>🎯 Sistema de Graella</h1>
+    <p class="subtitle">Exercici 1 - Bucles @for en SCSS</p>
+
+    <div class="section">
+        <h2 class="section-title">📐 Dues columnes de 6 (50% cadascuna)</h2>
+        <p class="row-label">Classes utilitzades: <code>.col-6</code> + <code>.col-6</code></p>
+        <div class="row">
+            <div class="col-6">
+                <div class="demo-box">col-6<br>(50%)</div>
+            </div>
+            <div class="col-6">
+                <div class="demo-box">col-6<br>(50%)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">📐 Tres columnes de 4 (33.33% cadascuna)</h2>
+        <p class="row-label">Classes utilitzades: <code>.col-4</code> + <code>.col-4</code> + <code>.col-4</code></p>
+        <div class="row">
+            <div class="col-4">
+                <div class="demo-box">col-4<br>(33.33%)</div>
+            </div>
+            <div class="col-4">
+                <div class="demo-box">col-4<br>(33.33%)</div>
+            </div>
+            <div class="col-4">
+                <div class="demo-box">col-4<br>(33.33%)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">📐 Quatre columnes de 3 (25% cadascuna)</h2>
+        <p class="row-label">Classes utilitzades: <code>.col-3</code> × 4</p>
+        <div class="row">
+            <div class="col-3">
+                <div class="demo-box">col-3<br>(25%)</div>
+            </div>
+            <div class="col-3">
+                <div class="demo-box">col-3<br>(25%)</div>
+            </div>
+            <div class="col-3">
+                <div class="demo-box">col-3<br>(25%)</div>
+            </div>
+            <div class="col-3">
+                <div class="demo-box">col-3<br>(25%)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">📐 Combinació personalitzada</h2>
+
+        <p class="row-label">Exemple 1: <code>.col-8</code> + <code>.col-4</code></p>
+        <div class="row">
+            <div class="col-8">
+                <div class="demo-box">col-8<br>(66.66%)</div>
+            </div>
+            <div class="col-4">
+                <div class="demo-box">col-4<br>(33.33%)</div>
+            </div>
+        </div>
+
+        <p class="row-label">Exemple 2: <code>.col-3</code> + <code>.col-6</code> + <code>.col-3</code></p>
+        <div class="row">
+            <div class="col-3">
+                <div class="demo-box">col-3<br>(25%)</div>
+            </div>
+            <div class="col-6">
+                <div class="demo-box">col-6<br>(50%)</div>
+            </div>
+            <div class="col-3">
+                <div class="demo-box">col-3<br>(25%)</div>
+            </div>
+        </div>
+
+        <p class="row-label">Exemple 3: <code>.col-2</code> + <code>.col-8</code> + <code>.col-2</code></p>
+        <div class="row">
+            <div class="col-2">
+                <div class="demo-box">col-2<br>(16.66%)</div>
+            </div>
+            <div class="col-8">
+                <div class="demo-box">col-8<br>(66.66%)</div>
+            </div>
+            <div class="col-2">
+                <div class="demo-box">col-2<br>(16.66%)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">📐 Totes les columnes disponibles</h2>
+        <p class="row-label">Sistema complet de 12 columnes</p>
+
+        <div class="row">
+            <div class="col-1"><div class="demo-box">1</div></div>
+            <div class="col-11"><div class="demo-box">11</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-2"><div class="demo-box">2</div></div>
+            <div class="col-10"><div class="demo-box">10</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-3"><div class="demo-box">3</div></div>
+            <div class="col-9"><div class="demo-box">9</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-4"><div class="demo-box">4</div></div>
+            <div class="col-8"><div class="demo-box">8</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-5"><div class="demo-box">5</div></div>
+            <div class="col-7"><div class="demo-box">7</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-6"><div class="demo-box">6</div></div>
+            <div class="col-6"><div class="demo-box">6</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12"><div class="demo-box">12 (100%)</div></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">🎨 Exemple de Layout Pràctic</h2>
+        <p class="row-label">Header + Sidebar + Main + Footer</p>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="demo-box" style="background: #3498db;">Header (col-12)</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <div class="demo-box" style="background: #2ecc71; padding: 60px 20px;">Sidebar<br>(col-3)</div>
+            </div>
+            <div class="col-9">
+                <div class="demo-box" style="background: #e74c3c; padding: 60px 20px;">Main Content<br>(col-9)</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="demo-box" style="background: #f39c12;">Footer (col-12)</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
