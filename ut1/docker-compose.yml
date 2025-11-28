@@ -46,3 +46,13 @@ services:
         - PORT=3004
       ports:
         - "3009:3004"
+
+  ticketmaster:
+    image: node:22
+    tty: true
+    stdin_open: true
+    working_dir: /appdiw
+    volumes:
+      - ./ticketmaster_prova:/appdiw
+    ports:
+      - "8086:3000"
