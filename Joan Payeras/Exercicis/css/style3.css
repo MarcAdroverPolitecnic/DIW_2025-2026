@@ -1,0 +1,31 @@
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.galeria-item {
+  width: 33%;
+  overflow: hidden;
+}
+
+.galeria-item img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: block;
+}
+
+.galeria-item img:hover {
+  box-shadow: 2x 0 4px 8px rgba(0, 0, 0, 0.1);
+  scale: 1.1;
+}
+
+.galeria-item .titol {
+  text-align: center;
+  margin-top: 1rem;
+  color: red;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style3.css.map */

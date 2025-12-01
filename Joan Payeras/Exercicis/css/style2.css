@@ -1,0 +1,45 @@
+.formulari {
+  width: 36rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+.camp label {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.camp input {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border: 1px black solid;
+  font-size: 1rem;
+}
+.camp input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+.camp textarea {
+  field-sizing: content;
+  width: 100%;
+}
+.camp textarea:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+.boto-enviar {
+  padding: 1rem;
+  background-color: green;
+  font-size: 1rem;
+  width: 100%;
+  color: white;
+}
+
+.boto-enviar:hover {
+  background-color: darkgreen;
+}
+
+/*# sourceMappingURL=style2.css.map */

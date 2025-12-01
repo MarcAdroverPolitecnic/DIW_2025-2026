@@ -1,0 +1,56 @@
+//El contenidor de les imatges ha de tenir un display flex amb espai entre els elements de 1 rem,
+// i un padding de 2 rem. El contingut ha d’estar justificat al centre.
+
+//Cada element de la galeria ha de tenir una amplada del 33%.
+//Cada contenidor de la imatge no ha de sobresuperar-se (overflow: hidden). La imatge ha de tenir
+//un contenidor amb una ombra mínima (box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);)
+
+//Les imatges han de tenir una amplada del 100% del seu contenidor i s’han de comportar com un bloc.
+//Quan es passi el ratolí per damunt una imatge:
+//L’ombra ha de fer-se el doble de gran (0 8px 16px rgba(0,0,0,0.2))
+//La imatge ha de fer-se més gran (scale 1.1)
+//A davall de cada imatge ha de tenir el títol centrat, amb un marge superior de 1 rem,
+//el color darkkhaki pel text i un tamany de lletra de 18px.
+
+$color-titol-imatge: darkkhaki;
+$amplada-maxima: 100%;
+$amplada33percent: 33%;
+$sombra-imatages: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+$galeria_posicio: center;
+$espai-galeries: 1rem;
+$padding-galeries: 2rem;
+
+$tamany-titol: 18px;
+$marge-top-titol: 1rem;
+
+.galeria{
+  display: flex;
+  justify-content: $galeria_posicio;
+  gap: $espai-galeries;
+  padding: $padding-galeries;
+}
+
+.galeria-item{
+  width: $amplada33percent;
+  overflow: hidden;
+}
+
+.galeria-item img{
+  box-shadow: $sombra-imatages;
+  width: $amplada-maxima;
+  display: block;
+}
+
+.galeria-item img:hover{
+  box-shadow: 2x$sombra-imatages;
+  scale: 1.1;
+}
+
+.galeria-item .titol{
+  text-align: center;
+  margin-top: $marge-top-titol;
+  color: red;
+  font-size: $tamany-titol;
+}
+

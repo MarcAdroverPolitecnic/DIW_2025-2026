@@ -1,8 +1,0 @@
-FROM node:22
-
-WORKDIR /app
-
-RUN apt update
-RUN npm install --global gulp-cli
-RUN npm init -y
-RUN npm install --save-dev gulp

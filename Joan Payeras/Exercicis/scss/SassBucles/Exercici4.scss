@@ -1,0 +1,181 @@
+$base-spacing: 8px;
+$spacing-max: 5;
+
+//Aqui el codi :D
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #667eea;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #667eea;
+}
+
+.demo-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.demo-inner {
+  background: rgba(255,255,255,0.2);
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px dashed white;
+}
+
+.spacing-demo {
+  background: #f8f9fa;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.info-box {
+  background: #e7f3ff;
+  border-left: 4px solid #2196F3;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+code {
+  background: #f4f4f4;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  color: #e74c3c;
+  font-size: 0.9rem;
+}
+
+.grid-demo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.card-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.responsive-info {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.spacing-scale {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.scale-item {
+  text-align: center;
+}
+
+.scale-bar {
+  background: linear-gradient(to top, #667eea, #764ba2);
+  width: 60px;
+  margin: 0 auto 10px;
+  border-radius: 4px 4px 0 0;
+}
+
+$text-styles: (
+        xs: (font-size: 0.75rem, line-height: 1rem, letter-spacing: 0.025em),
+        sm: (font-size: 0.875rem, line-height: 1.25rem, letter-spacing: 0.015em),
+        base: (font-size: 1rem, line-height: 1.5rem, letter-spacing: 0),
+        lg: (font-size: 1.125rem, line-height: 1.75rem, letter-spacing: -0.01em),
+        xl: (font-size: 1.25rem, line-height: 1.875rem, letter-spacing: -0.015em),
+        2xl: (font-size: 1.5rem, line-height: 2rem, letter-spacing: -0.02em),
+        3xl: (font-size: 1.875rem, line-height: 2.25rem, letter-spacing: -0.025em),
+        4xl: (font-size: 2.25rem, line-height: 2.5rem, letter-spacing: -0.03em)
+);
+
+$text-transforms: (uppercase, lowercase, capitalize, normal-case);
+
+.italic {
+  font-style: italic;
+}
+
+.not-italic {
+  font-style: normal;
+}
+
+@each $text, $variables in $text-styles {
+  @each $text2, $variables2 in $variables {
+    .text-#{$text}{
+      $text2: $variables2;
+  }
+}
+}
+

@@ -1,0 +1,14 @@
+services:
+  migracio:
+  image: nginx:latest
+  ports:
+    - "8080:80"
+  volumes:
+    - ./web:/usr/share/nginx/html
+
+  proxy:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    depends_on:
+      - web

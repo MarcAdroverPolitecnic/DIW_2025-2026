@@ -1,0 +1,32 @@
+name: "exercici-entrega"
+services:
+  app1:
+    build:
+      context: .
+      dockerfile: simulacre/vite-project/Dockerfile
+    tty: true
+    stdin_open: true
+    working_dir: /app
+    volumes:
+      - ./simulacre/vite-project:/app
+    ports:
+      - "8082:5173"
+    command: ["sh", "-c", "npm run build && npm run dev"]
+
+  app3:
+    build:
+      context: .
+      dockerfile: ./simulacre/carpetaApache/Dockerfile
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./simulacre/vite-project/dist:/var/www/vite-project
+    ports:
+      - "8084:80"
+
+
+
+#npm create vite@latest / yes / vite-project / no /
+#A package.json, "dev": "vite --host 0.0.0.0",
+#ara hem de sortir del contenidor i tornar-ho a executar amb les comandes ja creades
+#descomentar lo que hi havia dins el dockerfile i tornar a posar la comanda de docker-compose

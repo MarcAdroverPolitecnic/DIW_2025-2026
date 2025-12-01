@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 4</title>
+    <link rel="stylesheet" href="../css/SassBucles/Exercici4.css">
+</head>
+<body>
+<div class="container">
+    <h1>Sistema de spacing responsiu</h1>
+    <p class="subtitle">Exercici 3 - Bucles @for amb Media Queries</p>
+
+    <div class="section">
+        <h2 class="section-title">Escala de spacing</h2>
+        <div class="info-box">
+            <strong>Sistema basat en múltiples de 8px:</strong><br>
+            Cada nivell multiplica el valor base (8px) per un número de 0 a 5
+        </div>
+
+        <div class="spacing-scale">
+            <div class="scale-item">
+                <div class="scale-bar" style="height: 0px;"></div>
+                <strong>0</strong><br>
+                <span style="font-size: 0.9rem; color: #666;">0px</span>
+            </div>
+            <div class="scale-item">
+                <div class="scale-bar" style="height: 30px;"></div>
+                <strong>1</strong><br>
+                <span style="font-size: 0.9rem; color: #666;">8px</span>
+            </div>
+            <div class="scale-item">
+                <div class="scale-bar" style="height: 60px;"></div>
+                <strong>2</strong><br>
+                <span style="font-size: 0.9rem; color: #666;">16px</span>
+            </div>
+            <div class="scale-item">
+                <div class="scale-bar" style="height: 90px;"></div>
+                <strong>3</strong><br>
+                <span style="font-size: 0.9rem; color: #666;">24px</span>
+            </div>
+            <div class="scale-item">
+                <div class="scale-bar" style="height: 120px;"></div>
+                <strong>4</strong><br>
+                <span style="font-size: 0.9rem; color: #666;">32px</span>
+            </div>
+            <div class="scale-item">
+                <div class="scale-bar" style="height: 150px;"></div>
+                <strong>5</strong><br>
+                <span style="font-size: 0.9rem; color: #666;">40px</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Exemples de marges</h2>
+
+        <div class="spacing-demo p-4">
+            <p style="margin-bottom: 15px;"><strong>Marge inferior variable:</strong> <code>.mb-{n}</code></p>
+
+            <div class="demo-box mb-1">
+                <div class="demo-inner">mb-1 (8px)</div>
+            </div>
+
+            <div class="demo-box mb-2">
+                <div class="demo-inner">mb-2 (16px)</div>
+            </div>
+
+            <div class="demo-box mb-3">
+                <div class="demo-inner">mb-3 (24px)</div>
+            </div>
+
+            <div class="demo-box mb-4">
+                <div class="demo-inner">mb-4 (32px)</div>
+            </div>
+
+            <div class="demo-box mb-5">
+                <div class="demo-inner">mb-5 (40px)</div>
+            </div>
+
+            <div class="demo-box">
+                <div class="demo-inner">Últim element (sense marge)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Exemples de Padding</h2>
+
+        <div class="grid-demo">
+            <div class="spacing-demo">
+                <div class="demo-box p-1">
+                    <div class="demo-inner">p-1<br>(8px)</div>
+                </div>
+            </div>
+
+            <div class="spacing-demo">
+                <div class="demo-box p-2">
+                    <div class="demo-inner">p-2<br>(16px)</div>
+                </div>
+            </div>
+
+            <div class="spacing-demo">
+                <div class="demo-box p-3">
+                    <div class="demo-inner">p-3<br>(24px)</div>
+                </div>
+            </div>
+
+            <div class="spacing-demo">
+                <div class="demo-box p-4">
+                    <div class="demo-inner">p-4<br>(32px)</div>
+                </div>
+            </div>
+
+            <div class="spacing-demo">
+                <div class="demo-box p-5">
+                    <div class="demo-inner">p-5<br>(40px)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Spacing direccional</h2>
+
+        <div class="info-box">
+            <strong>Classes disponibles:</strong><br>
+            • <code>.mt-*</code> = margin-top<br>
+            • <code>.mr-*</code> = margin-right<br>
+            • <code>.mb-*</code> = margin-bottom<br>
+            • <code>.ml-*</code> = margin-left<br>
+            • <code>.mx-*</code> = margin horitzontal (left + right)<br>
+            • <code>.my-*</code> = margin vertical (top + bottom)<br>
+            (El mateix per padding: <code>.pt-*</code>, <code>.pr-*</code>, <code>.pb-*</code>, <code>.pl-*</code>, <code>.px-*</code>, <code>.py-*</code>)
+        </div>
+
+        <div class="spacing-demo p-4">
+            <div class="demo-box mx-5 my-3">
+                <div class="demo-inner">mx-5 + my-3<br>Marge horitzontal 40px + Marge vertical 24px</div>
+            </div>
+        </div>
+
+        <div class="spacing-demo p-4">
+            <div class="demo-box mt-5">
+                <div class="demo-inner">mt-5<br>Marge superior de 40px</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Spacing responsiu</h2>
+
+        <div class="responsive-info">
+            <strong>Redimensiona la finestra del navegador per veure els canvis!</strong><br><br>
+            Les classes responsives segueixen aquest patró:<br>
+            • <code>.m-sm-*</code> → a partir de 576px<br>
+            • <code>.m-md-*</code> → a partir de 768px<br>
+            • <code>.m-lg-*</code> → a partir de 992px
+        </div>
+
+        <div class="spacing-demo p-4">
+            <div class="demo-box mb-2 mb-sm-3 mb-md-4 mb-lg-5">
+                <div class="demo-inner">
+                    <strong>Marge inferior adaptable:</strong><br>
+                    • Mòbil: 16px (mb-2)<br>
+                    • Tablet: 24px (mb-sm-3)<br>
+                    • Desktop S: 32px (mb-md-4)<br>
+                    • Desktop L: 40px (mb-lg-5)
+                </div>
+            </div>
+
+            <div class="demo-box">
+                <div class="demo-inner">Element següent</div>
+            </div>
+        </div>
+
+        <div class="spacing-demo p-4">
+            <div class="demo-box p-1 p-sm-2 p-md-3 p-lg-4">
+                <div class="demo-inner">
+                    <strong>Padding adaptable:</strong><br>
+                    El padding interior canvia segons la mida de pantalla
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Exemple de layout amb spacing</h2>
+
+        <div class="grid-demo">
+            <div class="card mb-3 mb-md-0">
+                <div class="card-header">Producte 1</div>
+                <div class="card-body">
+                    <h3 class="mb-2">Ordinador portàtil</h3>
+                    <p class="mb-3" style="color: #666;">Perfecte per a treballar i estudiar</p>
+                    <div class="mt-4">
+                        <strong style="color: #667eea; font-size: 1.5rem;">999€</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 mb-md-0">
+                <div class="card-header">Producte 2</div>
+                <div class="card-body">
+                    <h3 class="mb-2">Ratolí gaming</h3>
+                    <p class="mb-3" style="color: #666;">Alta precisió i ergonomia</p>
+                    <div class="mt-4">
+                        <strong style="color: #667eea; font-size: 1.5rem;">49€</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 mb-md-0">
+                <div class="card-header">Producte 3</div>
+                <div class="card-body">
+                    <h3 class="mb-2">Teclat mecànic</h3>
+                    <p class="mb-3" style="color: #666;">Switches blue, RGB</p>
+                    <div class="mt-4">
+                        <strong style="color: #667eea; font-size: 1.5rem;">129€</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

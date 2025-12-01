@@ -1,0 +1,28 @@
+@for $i from 1 through length($valors) {
+  .m-#{$i} {
+    margin: nth($valors, $i);
+  }
+  .p-#{$i} {
+    padding: nth($valors, $i);
+  }
+}
+
+@each $display in $displays {
+  .d-#{$display} {
+    display: $display;
+  }
+}
+
+@each $position in $positions{
+  .posicio-#{$position} {
+    position: $position;
+    }
+}
+
+@each $pl in $position-locations{
+  @each $pv in $position-values{
+    .#{$pl}-#{$pv}{
+      #{$pl}: $pv;
+      }
+    }
+}
