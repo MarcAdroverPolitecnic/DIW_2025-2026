@@ -1,0 +1,62 @@
+.container{
+    display: grid;
+    grid-template-areas:
+    "A A B B B"
+    "C C peluts peluts peluts"
+    "E E peluts peluts peluts"
+    "E E F F F";
+}
+
+.box-1{
+    background-color: red;
+    grid-area: A;
+}
+
+.box-2{
+    background-color: green;
+    grid-area: B;
+}
+
+.box-3{
+    background-color: blue;
+    grid-area: C;
+}
+
+.box-4{
+    background-color: yellow;
+    grid-area: peluts;
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            text-align: end;
+            align-self: flex-end;
+        }
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #gallery article {
+            flex: 0 0 50%;
+        }
+    }
+}
+
+.box-5{
+    background-color: orange;
+    grid-area: E;
+}
+
+.box-6{
+    background-color: pink;
+    grid-area: F;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}

@@ -1,0 +1,15 @@
+// 1
+
+$vermell: #e74c3c;
+$vermellOscur: darken($vermell, 25%);
+$vermellClar: lighten($vermell, 10%);
+$vermellSaturat: saturate($vermell, 10%);
+
+// 2
+
+@mixin cercle ($radi, $color){
+  width: $radi * 2;
+  height: $radi * 2;
+  background-color: $color;
+  border-radius: 50%;
+}

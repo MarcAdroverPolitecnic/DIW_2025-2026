@@ -1,0 +1,912 @@
+@charset "UTF-8";
+/* EXERCICI 1 - VARIABLES (0,5 punts)
+Definiu les variables que estan descrites a dins els següents comentaris.
+Aquestes variables s'aniran emprant al llarg de TOT L'EXAMEN.
+*/
+/* Vermell: #e74c3c */
+/* Vermell un 25% més obscur */
+/* Vermell un 10% més clar */
+/* Vermell saturat un 10% */
+.vermell {
+  color: #e74c3c; /* Variable vermell */
+}
+
+.vermellDarken {
+  color: #921e12; /* Variable vermell darken */
+}
+
+.vermellLighten {
+  color: #ed7669; /* Variable vermell lighten */
+}
+
+.vermellSaturate {
+  color: #f24331; /* Variable vermell saturate */
+}
+
+/* EXERCICI 2- DEFINICIÓ DEL MIXIN (0,5 punts)
+El mixin crearà un cercle d'un contenidor. Per això ha d'acceptar dos valors: el radi i el color de fons.
+Així podrem fer un cercle de qualsevol mida i color.
+ */
+/* EXERCICI 2B - US DEL MIXIN (0,25 punts) */
+div.avatar {
+  /* Feu servir el mixin per crear un cercle de 50px de radi i color #CCCCCC */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #CCCCCC;
+}
+
+img.picture {
+  /* Feu servir el mixin per crear un cercle de 200px de radi i color #3498db */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #3498db;
+}
+
+/* EXERCICI 3 - ANIDACIÓ (0,5 punts)
+Creeu l'anidació de la següent estructura */
+div#container {
+  width: 100%;
+  height: 100%;
+  background-color: #e74c3c; /* Variable vermell */
+  color: #ed7669; /* Variable vermell lighten */
+}
+div#container div#content {
+  max-width: 1000px;
+  max-height: 500px;
+}
+div#container div#content div#content2 {
+  font-size: 12px;
+}
+div#container div#content .important {
+  font-weight: bold;
+}
+div#container footer {
+  display: grid;
+  height: 50px;
+}
+
+/* EXERCICI 4 BUCLE DINTRE D'UN RANG - 0,5 punts
+Creeu un bucle el qual permeti crear 200 columnes */
+.col-1 {
+  width: 0.5%;
+}
+
+.col-2 {
+  width: 1%;
+}
+
+.col-3 {
+  width: 1.5%;
+}
+
+.col-4 {
+  width: 2%;
+}
+
+.col-5 {
+  width: 2.5%;
+}
+
+.col-6 {
+  width: 3%;
+}
+
+.col-7 {
+  width: 3.5%;
+}
+
+.col-8 {
+  width: 4%;
+}
+
+.col-9 {
+  width: 4.5%;
+}
+
+.col-10 {
+  width: 5%;
+}
+
+.col-11 {
+  width: 5.5%;
+}
+
+.col-12 {
+  width: 6%;
+}
+
+.col-13 {
+  width: 6.5%;
+}
+
+.col-14 {
+  width: 7%;
+}
+
+.col-15 {
+  width: 7.5%;
+}
+
+.col-16 {
+  width: 8%;
+}
+
+.col-17 {
+  width: 8.5%;
+}
+
+.col-18 {
+  width: 9%;
+}
+
+.col-19 {
+  width: 9.5%;
+}
+
+.col-20 {
+  width: 10%;
+}
+
+.col-21 {
+  width: 10.5%;
+}
+
+.col-22 {
+  width: 11%;
+}
+
+.col-23 {
+  width: 11.5%;
+}
+
+.col-24 {
+  width: 12%;
+}
+
+.col-25 {
+  width: 12.5%;
+}
+
+.col-26 {
+  width: 13%;
+}
+
+.col-27 {
+  width: 13.5%;
+}
+
+.col-28 {
+  width: 14%;
+}
+
+.col-29 {
+  width: 14.5%;
+}
+
+.col-30 {
+  width: 15%;
+}
+
+.col-31 {
+  width: 15.5%;
+}
+
+.col-32 {
+  width: 16%;
+}
+
+.col-33 {
+  width: 16.5%;
+}
+
+.col-34 {
+  width: 17%;
+}
+
+.col-35 {
+  width: 17.5%;
+}
+
+.col-36 {
+  width: 18%;
+}
+
+.col-37 {
+  width: 18.5%;
+}
+
+.col-38 {
+  width: 19%;
+}
+
+.col-39 {
+  width: 19.5%;
+}
+
+.col-40 {
+  width: 20%;
+}
+
+.col-41 {
+  width: 20.5%;
+}
+
+.col-42 {
+  width: 21%;
+}
+
+.col-43 {
+  width: 21.5%;
+}
+
+.col-44 {
+  width: 22%;
+}
+
+.col-45 {
+  width: 22.5%;
+}
+
+.col-46 {
+  width: 23%;
+}
+
+.col-47 {
+  width: 23.5%;
+}
+
+.col-48 {
+  width: 24%;
+}
+
+.col-49 {
+  width: 24.5%;
+}
+
+.col-50 {
+  width: 25%;
+}
+
+.col-51 {
+  width: 25.5%;
+}
+
+.col-52 {
+  width: 26%;
+}
+
+.col-53 {
+  width: 26.5%;
+}
+
+.col-54 {
+  width: 27%;
+}
+
+.col-55 {
+  width: 27.5%;
+}
+
+.col-56 {
+  width: 28%;
+}
+
+.col-57 {
+  width: 28.5%;
+}
+
+.col-58 {
+  width: 29%;
+}
+
+.col-59 {
+  width: 29.5%;
+}
+
+.col-60 {
+  width: 30%;
+}
+
+.col-61 {
+  width: 30.5%;
+}
+
+.col-62 {
+  width: 31%;
+}
+
+.col-63 {
+  width: 31.5%;
+}
+
+.col-64 {
+  width: 32%;
+}
+
+.col-65 {
+  width: 32.5%;
+}
+
+.col-66 {
+  width: 33%;
+}
+
+.col-67 {
+  width: 33.5%;
+}
+
+.col-68 {
+  width: 34%;
+}
+
+.col-69 {
+  width: 34.5%;
+}
+
+.col-70 {
+  width: 35%;
+}
+
+.col-71 {
+  width: 35.5%;
+}
+
+.col-72 {
+  width: 36%;
+}
+
+.col-73 {
+  width: 36.5%;
+}
+
+.col-74 {
+  width: 37%;
+}
+
+.col-75 {
+  width: 37.5%;
+}
+
+.col-76 {
+  width: 38%;
+}
+
+.col-77 {
+  width: 38.5%;
+}
+
+.col-78 {
+  width: 39%;
+}
+
+.col-79 {
+  width: 39.5%;
+}
+
+.col-80 {
+  width: 40%;
+}
+
+.col-81 {
+  width: 40.5%;
+}
+
+.col-82 {
+  width: 41%;
+}
+
+.col-83 {
+  width: 41.5%;
+}
+
+.col-84 {
+  width: 42%;
+}
+
+.col-85 {
+  width: 42.5%;
+}
+
+.col-86 {
+  width: 43%;
+}
+
+.col-87 {
+  width: 43.5%;
+}
+
+.col-88 {
+  width: 44%;
+}
+
+.col-89 {
+  width: 44.5%;
+}
+
+.col-90 {
+  width: 45%;
+}
+
+.col-91 {
+  width: 45.5%;
+}
+
+.col-92 {
+  width: 46%;
+}
+
+.col-93 {
+  width: 46.5%;
+}
+
+.col-94 {
+  width: 47%;
+}
+
+.col-95 {
+  width: 47.5%;
+}
+
+.col-96 {
+  width: 48%;
+}
+
+.col-97 {
+  width: 48.5%;
+}
+
+.col-98 {
+  width: 49%;
+}
+
+.col-99 {
+  width: 49.5%;
+}
+
+.col-100 {
+  width: 50%;
+}
+
+.col-101 {
+  width: 50.5%;
+}
+
+.col-102 {
+  width: 51%;
+}
+
+.col-103 {
+  width: 51.5%;
+}
+
+.col-104 {
+  width: 52%;
+}
+
+.col-105 {
+  width: 52.5%;
+}
+
+.col-106 {
+  width: 53%;
+}
+
+.col-107 {
+  width: 53.5%;
+}
+
+.col-108 {
+  width: 54%;
+}
+
+.col-109 {
+  width: 54.5%;
+}
+
+.col-110 {
+  width: 55%;
+}
+
+.col-111 {
+  width: 55.5%;
+}
+
+.col-112 {
+  width: 56%;
+}
+
+.col-113 {
+  width: 56.5%;
+}
+
+.col-114 {
+  width: 57%;
+}
+
+.col-115 {
+  width: 57.5%;
+}
+
+.col-116 {
+  width: 58%;
+}
+
+.col-117 {
+  width: 58.5%;
+}
+
+.col-118 {
+  width: 59%;
+}
+
+.col-119 {
+  width: 59.5%;
+}
+
+.col-120 {
+  width: 60%;
+}
+
+.col-121 {
+  width: 60.5%;
+}
+
+.col-122 {
+  width: 61%;
+}
+
+.col-123 {
+  width: 61.5%;
+}
+
+.col-124 {
+  width: 62%;
+}
+
+.col-125 {
+  width: 62.5%;
+}
+
+.col-126 {
+  width: 63%;
+}
+
+.col-127 {
+  width: 63.5%;
+}
+
+.col-128 {
+  width: 64%;
+}
+
+.col-129 {
+  width: 64.5%;
+}
+
+.col-130 {
+  width: 65%;
+}
+
+.col-131 {
+  width: 65.5%;
+}
+
+.col-132 {
+  width: 66%;
+}
+
+.col-133 {
+  width: 66.5%;
+}
+
+.col-134 {
+  width: 67%;
+}
+
+.col-135 {
+  width: 67.5%;
+}
+
+.col-136 {
+  width: 68%;
+}
+
+.col-137 {
+  width: 68.5%;
+}
+
+.col-138 {
+  width: 69%;
+}
+
+.col-139 {
+  width: 69.5%;
+}
+
+.col-140 {
+  width: 70%;
+}
+
+.col-141 {
+  width: 70.5%;
+}
+
+.col-142 {
+  width: 71%;
+}
+
+.col-143 {
+  width: 71.5%;
+}
+
+.col-144 {
+  width: 72%;
+}
+
+.col-145 {
+  width: 72.5%;
+}
+
+.col-146 {
+  width: 73%;
+}
+
+.col-147 {
+  width: 73.5%;
+}
+
+.col-148 {
+  width: 74%;
+}
+
+.col-149 {
+  width: 74.5%;
+}
+
+.col-150 {
+  width: 75%;
+}
+
+.col-151 {
+  width: 75.5%;
+}
+
+.col-152 {
+  width: 76%;
+}
+
+.col-153 {
+  width: 76.5%;
+}
+
+.col-154 {
+  width: 77%;
+}
+
+.col-155 {
+  width: 77.5%;
+}
+
+.col-156 {
+  width: 78%;
+}
+
+.col-157 {
+  width: 78.5%;
+}
+
+.col-158 {
+  width: 79%;
+}
+
+.col-159 {
+  width: 79.5%;
+}
+
+.col-160 {
+  width: 80%;
+}
+
+.col-161 {
+  width: 80.5%;
+}
+
+.col-162 {
+  width: 81%;
+}
+
+.col-163 {
+  width: 81.5%;
+}
+
+.col-164 {
+  width: 82%;
+}
+
+.col-165 {
+  width: 82.5%;
+}
+
+.col-166 {
+  width: 83%;
+}
+
+.col-167 {
+  width: 83.5%;
+}
+
+.col-168 {
+  width: 84%;
+}
+
+.col-169 {
+  width: 84.5%;
+}
+
+.col-170 {
+  width: 85%;
+}
+
+.col-171 {
+  width: 85.5%;
+}
+
+.col-172 {
+  width: 86%;
+}
+
+.col-173 {
+  width: 86.5%;
+}
+
+.col-174 {
+  width: 87%;
+}
+
+.col-175 {
+  width: 87.5%;
+}
+
+.col-176 {
+  width: 88%;
+}
+
+.col-177 {
+  width: 88.5%;
+}
+
+.col-178 {
+  width: 89%;
+}
+
+.col-179 {
+  width: 89.5%;
+}
+
+.col-180 {
+  width: 90%;
+}
+
+.col-181 {
+  width: 90.5%;
+}
+
+.col-182 {
+  width: 91%;
+}
+
+.col-183 {
+  width: 91.5%;
+}
+
+.col-184 {
+  width: 92%;
+}
+
+.col-185 {
+  width: 92.5%;
+}
+
+.col-186 {
+  width: 93%;
+}
+
+.col-187 {
+  width: 93.5%;
+}
+
+.col-188 {
+  width: 94%;
+}
+
+.col-189 {
+  width: 94.5%;
+}
+
+.col-190 {
+  width: 95%;
+}
+
+.col-191 {
+  width: 95.5%;
+}
+
+.col-192 {
+  width: 96%;
+}
+
+.col-193 {
+  width: 96.5%;
+}
+
+.col-194 {
+  width: 97%;
+}
+
+.col-195 {
+  width: 97.5%;
+}
+
+.col-196 {
+  width: 98%;
+}
+
+.col-197 {
+  width: 98.5%;
+}
+
+.col-198 {
+  width: 99%;
+}
+
+.col-199 {
+  width: 99.5%;
+}
+
+.col-200 {
+  width: 100%;
+}
+
+/* EXERCICI 5 - BUCLES A PARTIR D'UNA LLISTA DE VALORS (1 punt)
+ Creeu una variable que sigui una llista amb els valors "screen i print"
+ Recorreu aquesta llista i creeu els @media pertinents, és a dir, dos, un per screen i un per print.
+ Veureu que hi ha una condició que afecta als paràgrafs i, depenent del media corresponent heu de posar-hi unes condicions
+ o unes altres (mitjançant un condicional).
+ */
+@media only screen {
+  p {
+    /* propietats si el media es "screen" */
+    color: #e74c3c; /* variable Vermell */
+    border: solid 1px #ed7669; /* variable Vermell lighten */
+    background-color: #921e12; /* variable Vermell darken */
+    /* propietats que afecten als dos media */
+    font-size: 0.5em;
+    text-align: justify;
+    text-decoration: none;
+    text-indent: 50px;
+    letter-spacing: 2px;
+  }
+}
+@media only print {
+  p {
+    /* propietats si el media és "print" */
+    color: #f24331; /* variable Vermell saturate */
+    border: dashed 2px #f24331; /* variable Vermell saturate */
+    /* propietats que afecten als dos media */
+    font-size: 0.5em;
+    text-align: justify;
+    text-decoration: none;
+    text-indent: 50px;
+    letter-spacing: 2px;
+  }
+}
+/* EXERCICI 6 - 0.5 punts. Desglosseu el SASS en 3 arxius:
+  - 1 arxiu principal anomenat principal.scss que UNICAMENT tingui importats els altres 2 arxius parcials,
+    és a dir, serà un arxiu de 2 línies només.
+
+  - Els arxius parcials seran:
+      variables-functions.scss: arxiu que contindrà les variables i el mixin
+      body.scss: arxiu que contindrà la resta de codi
+ */

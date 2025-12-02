@@ -1,0 +1,70 @@
+div.avatar{
+  @include cercle(25px, #CCCCCC);
+}
+
+img.picture {
+  @include cercle(100px, #3498db);
+}
+
+// 3
+
+div#container {
+  width: 100%;
+  height: 100%;
+  background-color: $vermell;
+  color: $vermellClar;
+  div#content {
+    max-width: 1000px;
+    max-height: 500px;
+    div#content2 {
+      font-size: 12px;
+    }
+    .important {
+      font-weight: bold;
+    }
+  }
+  footer {
+    display: grid;
+    height: 50px;
+  }
+}
+
+// 4
+
+$width: 0.5%;
+
+@for $i from 1 through 200 {
+  .col-#{$i} {
+    width: $width;
+  }
+  $width: $width + 0.5%;
+}
+
+// 5
+
+$llista: [screen, print];
+
+@each $valor in $llista {
+  @media only #{$valor} {
+    p {
+      /* propietats si el media es "screen" */
+      @if($valor == screen){
+        color: $vermell; /* variable Vermell */
+        border: solid 1px $vermellClar; /* variable Vermell lighten */
+        background-color: $vermellOscur; /* variable Vermell darken */
+      }
+      /* propietats si el media Ã©s "print" */
+      @if($valor == print){
+        color: $vermellSaturat; /* variable Vermell saturate */
+        border: dashed 2px $vermellSaturat; /* variable Vermell saturate */
+      }
+
+      /* propietats que afecten als dos media */
+      font-size: 0.5em;
+      text-align: justify;
+      text-decoration: none;
+      text-indent: 50px;
+      letter-spacing: 2px;
+    }
+  }
+}
