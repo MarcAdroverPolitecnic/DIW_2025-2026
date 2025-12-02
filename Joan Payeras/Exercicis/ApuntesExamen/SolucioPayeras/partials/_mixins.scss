@@ -1,7 +1,7 @@
 
 @mixin flex(
   $direction: row,
-  $justify: flex-start,
+  $justify: flex-start,             //Si no se reb res per paràmetre, s'usen lo que està per predefinit
   $align: stretch,
   $wrap: nowrap,
   $gap: 0
@@ -105,8 +105,8 @@
   
   &:hover {
     background: $bg-hover;
-    @content;
-  }
+    @content;                       //@content es on s'executen els paràmetres que es defineixen dins les claus
+  }                                 //{} desde on es crida al mixin
   
   @include hover-active-reset;
 }

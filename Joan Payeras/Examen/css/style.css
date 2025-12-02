@@ -1,0 +1,77 @@
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-inline-grid {
+  display: inline-grid;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-contents {
+  display: contents;
+}
+
+.d-flow-root {
+  display: flow-root;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.m-5 {
+  margin: 1.5rem;
+}
+
+.m-6 {
+  margin: 2rem;
+}
+
+.m-7 {
+  margin: 3rem;
+}
+
+.m-8 {
+  margin: 4rem;
+}
+
+/*# sourceMappingURL=style.css.map */

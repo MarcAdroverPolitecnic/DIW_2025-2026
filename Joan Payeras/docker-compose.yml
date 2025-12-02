@@ -19,13 +19,8 @@ services:
     stdin_open: true
     working_dir: /app
     volumes:
-      - ./Exercicis:/app      #Provar funcionament del DOKER-COMPOSE. Hem create aquest docker-compose,
-                              #hem entrat dins el contenidor i hem fet un npm install per generar la carpeta
-                              #node-modules i per iniciar la pagina npm run start
+      - ./Exercicis:/app
 
-                              #tenir en compte que si eliminam el contenidor, per que funcioni una altra vegada hauram de
-                              #tornar a fer npm insall i npm run start, per aixo llo recomenable es fer un
-                              #dockerfile per que ho faci automaticament
   web:
     image: httpd
     tty: true
@@ -35,18 +30,6 @@ services:
       - ./Exercicis:/usr/local/apache2/htdocs/
     ports:
       - "84:80"
-  qr:
-      image: node:22
-      tty: true
-      stdin_open: true
-      working_dir: /app
-      volumes:
-        - ./qr-app:/app
-      environment:
-        - PORT=3004
-      ports:
-        - "3009:3004"
-
   ticketmaster:
     image: node:22
     tty: true
@@ -56,3 +39,14 @@ services:
       - ./ticketmaster_prova:/appdiw
     ports:
       - "8086:3000"
+
+  scssexamen:
+    # image: node:18
+    build:
+      context: .
+      dockerfile: Dockerfile-scss
+    tty: true
+    stdin_open: true
+    working_dir: /app
+    volumes:
+      - ./Examen:/app

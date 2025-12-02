@@ -1,0 +1,11 @@
+@each $display in $displays {
+  .d-#{$display} {
+    display: $display;
+  }
+}
+
+@for $i from 0 through 8 {
+  .m-#{$i} {
+    margin: calcular-spacing-valor($i);
+  }
+}
