@@ -1,112 +1,198 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activitat 1 - Targeta de productes</title>
-    <link rel="stylesheet" href="css/scssTotJunt/juntarTot.css">
+    <title>Proyecto SASS - Tienda de Productos</title>
+    <!-- Para el proyecto completo -->
+    <link rel="stylesheet" href="./css/main.css">
+    
+    <!-- Para el proyecto esqueleto 
+    <link rel="stylesheet" href="proyecto-esqueleto/css/main.css">-->
 </head>
 <body>
-<header class="header">
-    <div class="logo">
-        <img src="https://beelinguae.com/wp-content/uploads/2025/07/2025-07-28-21_38_36-Straw-Hat-_-One-Piece-Wiki-_-Fandom.png" alt="Logo">
-    </div>
-    <nav class="navegacio">
-        <a href="#" class="enllaç actiu">Inici</a>
-        <a href="#" class="enllaç">Sobre nosaltres</a>
-        <a href="#" class="enllaç">Serveis</a>
-        <a href="#" class="enllaç">Blog</a>
-        <a href="#" class="enllaç">Contacte</a>
-    </nav>
-</header>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <h1 class="logo">TechShop</h1>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Productos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<section>
-    <div class="galeria">
-        <div class="galeria-item">
-            <div class="imatge-container">
-                <img src="https://www.laconca51.cat/wp-content/uploads/2020/01/foto1-e1578572307934-1000x562.jpg" alt="Imatge 1">
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">Bienvenido a TechShop</h2>
+                <p class="hero-text">Los mejores productos tecnológicos</p>
+                <button class="btn btn-primary btn-lg">Ver Productos</button>
             </div>
-            <h4 class="titol">Paisatge 1</h4>
-        </div>
-        <div class="galeria-item">
-            <div class="imatge-container">
-                <img src="https://www.laconca51.cat/wp-content/uploads/2020/01/foto4-e1578572492710.jpg" alt="Imatge 2">
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <h2 class="section-title">Nuestros Productos</h2>
+                
+                <div class="product-grid">
+                    <article class="card card-basic level-1">
+                        <div class="card-header">
+                            <h3 class="card-title">Laptop Pro</h3>
+                            <span class="badge badge-new">Nuevo</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Potente laptop para profesionales</p>
+                            <p class="price">$1299</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-sm">Comprar</button>
+                        </div>
+                    </article>
+
+                    <article class="card card-premium level-2">
+                        <div class="card-header">
+                            <h3 class="card-title">Smartphone X</h3>
+                            <span class="badge badge-hot">Popular</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Última generación de smartphones</p>
+                            <p class="price">$899</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-secondary btn-sm">Comprar</button>
+                        </div>
+                    </article>
+
+                    <article class="card card-basic level-3">
+                        <div class="card-header">
+                            <h3 class="card-title">Tablet Plus</h3>
+                            <span class="badge badge-sale">Oferta</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Perfecta para entretenimiento</p>
+                            <p class="price">$499</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success btn-sm">Comprar</button>
+                        </div>
+                    </article>
+
+                    <article class="card card-premium level-1">
+                        <div class="card-header">
+                            <h3 class="card-title">Smartwatch Pro</h3>
+                            <span class="badge badge-new">Nuevo</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Monitoriza tu salud y actividad</p>
+                            <p class="price">$349</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-md">Comprar</button>
+                        </div>
+                    </article>
+
+                    <article class="card card-basic level-2">
+                        <div class="card-header">
+                            <h3 class="card-title">Auriculares Wireless</h3>
+                            <span class="badge badge-hot">Popular</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Sonido de alta calidad</p>
+                            <p class="price">$199</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-secondary btn-md">Comprar</button>
+                        </div>
+                    </article>
+
+                    <article class="card card-premium level-3">
+                        <div class="card-header">
+                            <h3 class="card-title">Cámara Digital</h3>
+                            <span class="badge badge-sale">Oferta</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Captura momentos increíbles</p>
+                            <p class="price">$799</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success btn-lg">Comprar</button>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <h4 class="titol">Paisatge 2</h4>
-        </div>
-        <div class="galeria-item">
-            <div class="imatge-container">
-                <img src="https://www.laconca51.cat/wp-content/uploads/2020/01/foto2-e1578572407221-900x506.jpg" alt="Imatge 3">
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">¿Por qué elegirnos?</h2>
+                
+                <div class="feature-list">
+                    <div class="feature-item item-1">
+                        <div class="feature-icon">🚚</div>
+                        <h3>Envío Gratis</h3>
+                        <p>En pedidos superiores a $50</p>
+                    </div>
+                    
+                    <div class="feature-item item-2">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Pago Seguro</h3>
+                        <p>Tus datos están protegidos</p>
+                    </div>
+                    
+                    <div class="feature-item item-3">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Entrega Rápida</h3>
+                        <p>Recibe en 24-48 horas</p>
+                    </div>
+                    
+                    <div class="feature-item item-4">
+                        <div class="feature-icon">💎</div>
+                        <h3>Calidad Premium</h3>
+                        <p>Productos de primera calidad</p>
+                    </div>
+                </div>
             </div>
-            <h4 class="titol">Paisatge 3</h4>
-        </div>
-    </div>
-</section>
+        </section>
 
-<section>
-    <div class="equip">
-        <div class="membre-card">
-            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria" class="avatar">
-            <h3 class="nom">Maria García</h3>
-            <p class="carrec">Directora de Projectes</p>
-            <div class="xarxes">
-                <a href="#" class="xarxa-enllaç">in</a>
-                <a href="#" class="xarxa-enllaç">tw</a>
-                <a href="#" class="xarxa-enllaç">gh</a>
+        <section class="newsletter">
+            <div class="container">
+                <h2>Suscríbete a nuestro Newsletter</h2>
+                <form class="newsletter-form">
+                    <input type="email" class="input-text" placeholder="Tu email">
+                    <button class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre Nosotros</h3>
+                    <p>TechShop es tu tienda de confianza para productos tecnológicos.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <p>Redes sociales: Facebook | Twitter | Instagram</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechShop. Todos los derechos reservados.</p>
             </div>
         </div>
-        <div class="membre-card">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Joan" class="avatar">
-            <h3 class="nom">Joan Martínez</h3>
-            <p class="carrec">Desenvolupador Senior</p>
-            <div class="xarxes">
-                <a href="#" class="xarxa-enllaç">in</a>
-                <a href="#" class="xarxa-enllaç">tw</a>
-                <a href="#" class="xarxa-enllaç">gh</a>
-            </div>
-        </div>
-        <div class="membre-card">
-            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Laura" class="avatar">
-            <h3 class="nom">Laura Pérez</h3>
-            <p class="carrec">Dissenyadora UX/UI</p>
-            <div class="xarxes">
-                <a href="#" class="xarxa-enllaç">in</a>
-                <a href="#" class="xarxa-enllaç">tw</a>
-                <a href="#" class="xarxa-enllaç">gh</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="targeta-producte">
-        <h3 class="titol">Auriculars Bluetooth</h3>
-        <p class="descripcio">Auriculars sense fils amb cancel·lació de soroll</p>
-        <p class="preu">89,99€</p>
-        <button class="boto-compra">Afegir a la cistella</button>
-    </div>
-</section>
-
-<section>
-    <form class="formulari">
-        <div class="camp">
-            <label>Nom complet</label>
-            <input type="text" placeholder="Escriu el teu nom">
-        </div>
-        <div class="camp">
-            <label>Correu electrònic</label>
-            <input type="email" placeholder="exemple@correu.com">
-        </div>
-        <div class="camp">
-            <label>Missatge</label>
-            <textarea rows="5" placeholder="Escriu el teu missatge aquí"></textarea>
-        </div>
-        <button type="submit" class="boto-enviar">Enviar missatge</button>
-    </form>
-</section>
-
-
-
-
+    </footer>
 </body>
 </html>
+

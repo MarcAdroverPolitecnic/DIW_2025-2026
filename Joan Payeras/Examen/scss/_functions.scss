@@ -1,0 +1,42 @@
+// TODO: Completar la @function rem, que ha de retornar pixels a rem. Un rem equival a 16 pixels.sdsdasdasdas
+@function rem($pixels) {
+  @return ($pixels/16)rem;
+}
+
+// TODO: Funció que ha de retornar l'espaiat mitja multiplicat per un multiplicador. Completar la @function spacingcxcxxcxcxcxcx
+@function spacing($multiplier) {
+  @return ($spacing-md*$multiplier);
+}
+
+
+@function color-alpha($color, $opacity) {
+  @return rgba($color, $opacity);
+}
+
+@function text-contrast($background) {
+  @if (lightness($background) > 50%) {
+    @return $dark-color;
+  } @else {
+    @return $white;
+  }
+}
+
+@function get-color($color-name) {
+  @if map-has-key($theme-colors, $color-name) {
+    @return map-get($theme-colors, $color-name);
+  } @else {
+    @warn "El color '#{$color-name}' no existe en la paleta";
+    @return $primary-color;
+  }
+}
+
+// TODO: Crea una funció que retorni un percentatge.
+@function percentage-calc($value, $total) { //Tenc 4 taronges de 5 -> Aixo es un 0.8 de les taronges*10= 80 percent de les taronges
+  $resultat: ($value/$total)*10;
+  @return $resultat;
+}
+
+@function invert-color($color) {
+  @return invert($color);
+}
+
