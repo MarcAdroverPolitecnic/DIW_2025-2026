@@ -1,0 +1,39 @@
+/* src/styles/themes.css */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+    /* Valors per defecte (Tema Blau - Light) */
+    --color-background: #ffffff;
+    --color-foreground: #1a1a1a;
+    --color-card: #f8fafc;
+    --color-primary: #3B82F6;
+    --color-border: #e2e8f0;
+}
+
+/* Tema Blau */
+.theme-blue {
+    --color-primary: #3B82F6;
+}
+
+/* Tema Porpra */
+.theme-purple {
+    --color-primary: #8B5CF6;
+}
+
+/* Tema Verd */
+.theme-green {
+    --color-primary: #10B981;
+}
+
+/* Mode Fosc (Variables generals) */
+.dark {
+    --color-background: #0F172A;
+    --color-foreground: #f8fafc;
+    --color-card: #1e293b;
+    --color-border: #334155;
+}
+
+/* Ajustos de color primari per a mode fosc si calgués (opcional) */
+.dark.theme-blue { --color-primary: #60A5FA; }
+.dark.theme-purple { --color-primary: #A78BFA; }
+.dark.theme-green { --color-primary: #34D399; }

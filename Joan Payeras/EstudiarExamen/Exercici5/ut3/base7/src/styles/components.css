@@ -1,0 +1,7 @@
+@layer components {
+    .card {
+        background-color: var(--color-card);
+        border-radius: 0.75rem;
+    }
+}
+

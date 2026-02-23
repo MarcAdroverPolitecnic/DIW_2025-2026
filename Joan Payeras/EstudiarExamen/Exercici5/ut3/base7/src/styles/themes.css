@@ -1,0 +1,10 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root, .theme-blue {
+    --color-primary: #3B82F6;
+}
+
+.dark {
+    --color-background: #0F172A;
+}
+

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+    /* Tipografia */
+    --font-sans: "Inter", sans-serif;
+    --font-mono: "Fira Code", monospace;
+
+    /* Colors de Marca */
+    --color-brand: #6366F1;
+    --color-brand-dark: #4F46E5;
+
+    /* Colors de Fons i Text */
+    --color-bg: #FFFFFF;
+    --color-bg-alt: #F8FAFC;
+    --color-text: #1E293B;
+    --color-text-muted: #64748B;
+
+    /* Colors d'Estat */
+    --color-info: #0EA5E9;
+    --color-success: #22C55E;
+    --color-warning: #F59E0B;
+    --color-error: #EF4444;
+
+    /* Altres */
+    --radius-lg: 0.75rem;
+    --shadow-soft: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+@layer base {
+    body {
+        @apply bg-bg text-text font-sans antialiased;
+    }
+    h1 { @apply text-4xl font-bold mb-6 text-brand; }
+    h2 { @apply text-2xl font-semibold mt-8 mb-4 border-b border-gray-200 pb-2; }
+    h3 { @apply text-xl font-medium mt-6 mb-3; }
+    p { @apply leading-relaxed mb-4; }
+    a { @apply text-brand hover:underline transition-colors; }
+
+    code {
+        @apply font-mono bg-gray-100 text-pink-600 px-1.5 py-0.5 rounded text-sm;
+    }
+    pre {
+        @apply font-mono bg-slate-900 text-slate-50 p-4 rounded-lg overflow-x-auto my-6 shadow-lg;
+    }
+
+    table { @apply w-full border-collapse my-6 text-sm; }
+    th { @apply bg-gray-50 border-b border-gray-200 p-3 text-left font-semibold; }
+    td { @apply border-b border-gray-100 p-3; }
+
+    blockquote { @apply border-l-4 border-brand bg-slate-50 p-4 italic my-4 rounded-r; }
+    ul { @apply list-disc ml-6 mb-4; }
+    hr { @apply my-8 border-gray-200; }
+}
+
+@layer components {
+    /* Alertes */
+    .alert { @apply p-4 rounded-md border-l-4 mb-4 flex items-center gap-3; }
+    .alert-info { @apply bg-blue-50 border-info text-blue-800; }
+    .alert-success { @apply bg-green-50 border-success text-green-800; }
+    .alert-warning { @apply bg-amber-50 border-warning text-amber-800; }
+    .alert-error { @apply bg-red-50 border-error text-red-800; }
+
+    /* Targetes */
+    .card { @apply bg-white border border-gray-100 rounded-xl p-6 shadow-soft; }
+
+    /* Botons */
+    .btn { @apply px-4 py-2 rounded-lg font-medium transition-all active:scale-95 inline-block; }
+    .btn-primary { @apply bg-brand text-white hover:bg-brand-dark shadow-md; }
+    .btn-secondary { @apply bg-gray-200 text-gray-800 hover:bg-gray-300; }
+
+    /* Badges */
+    .badge { @apply px-2 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider; }
+
+    /* Navegació */
+    .nav-link { @apply block px-4 py-2 rounded-md text-text-muted hover:bg-gray-100 hover:text-brand transition-all; }
+    .nav-link-active { @apply bg-brand/10 text-brand font-semibold; }
+}

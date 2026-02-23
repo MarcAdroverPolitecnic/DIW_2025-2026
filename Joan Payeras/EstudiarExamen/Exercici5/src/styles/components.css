@@ -1,0 +1,26 @@
+/* src/styles/components.css */
+@layer components {
+    .card {
+        background-color: var(--color-card);
+        color: var(--color-foreground);
+        border: 1px solid var(--color-border);
+        border-radius: 0.75rem;
+        padding: 1.5rem;
+        transition: all 0.3s ease; /* Pas 2: Transicions suaus */
+    }
+
+    .btn-primary {
+        background-color: var(--color-primary);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition: opacity 0.2s;
+    }
+
+    .btn-secondary {
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+    }
+}

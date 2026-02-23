@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    /* Colors base */
+    --color-primary: #3B82F6;
+    --color-accent: #F59E0B;
+    --color-dark: #1F2937;
+    --color-light: #F3F4F6;
+    --font-main: "Outfit", sans-serif;
+
+    /* Part 1: Colors addicionals */
+    --color-primary-hover: #2563EB;
+    --color-secondary: #1E40AF;
+    --color-dark-soft: #374151;
+    --color-light-soft: #E5E7EB;
+    --color-card: #FFFFFF;
+    --color-success: #10B981;
+    --color-badge: #EF4444;
+
+    /* Espaiats personalitzats */
+    --spacing-18: 4.5rem;
+    --spacing-22: 5.5rem;
+    --spacing-128: 32rem;
+
+    /* Border radius */
+    --radius-card: 1rem;
+    --radius-button: 0.5rem;
+    --radius-badge: 9999px;
+
+    /* Ombres personalitzades */
+    --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-card-hover: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    --shadow-button: 0 4px 14px 0 rgba(59, 130, 246, 0.5);
+}
+
+/* Aplicar font-main globalment segons Part 4 */
+@layer base {
+    body {
+        @apply font-main bg-light text-dark antialiased;
+    }
+}
