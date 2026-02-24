@@ -5,30 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05c46bde-d4dd-4c72-9079-26d4e914e155" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/EstudiarExamen/Exercici2/base (1).zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EstudiarExamen/Exercici3/base (2).zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EstudiarExamen/Exercici4/base (3).zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EstudiarExamen/Exercici5/base (4).zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EstudiarExamen/Exercici5/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EstudiarExamen/Exercici5/src/components/Dashboard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EstudiarExamen/Exercici5/src/components/ProductCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EstudiarExamen/Exercici5/src/components/ThemeSelector.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EstudiarExamen/Exercici5/src/components/ThemeToggle.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EstudiarExamen/Exercici5/src/hooks/useTheme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EstudiarExamen/Exercici5/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EstudiarExamen/Exercici5/src/main.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EstudiarExamen/Exercici5/src/styles/components.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EstudiarExamen/Exercici5/src/styles/themes.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Joan Galmes/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Joan Galmes/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Joan Payeras.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile-scss" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile-scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen/ExamenMarcAdrover.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Examen/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,6 +165,7 @@
       <workItem from="1764866815323" duration="54000" />
       <workItem from="1766165874112" duration="578000" />
       <workItem from="1771861088113" duration="9710000" />
+      <workItem from="1771930075690" duration="3389000" />
     </task>
     <servers />
   </component>

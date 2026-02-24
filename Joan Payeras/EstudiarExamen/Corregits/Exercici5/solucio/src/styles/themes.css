@@ -1,0 +1,86 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root, .theme-blue {
+    --color-background: #F8FAFC;
+    --color-foreground: #0F172A;
+    --color-card: #FFFFFF;
+    --color-card-hover: #F1F5F9;
+    --color-primary: #3B82F6;
+    --color-primary-hover: #2563EB;
+    --color-primary-light: #DBEAFE;
+    --color-secondary: #64748B;
+    --color-secondary-hover: #475569;
+    --color-border: #E2E8F0;
+    --color-muted: #94A3B8;
+}
+
+.theme-blue.dark, .dark.theme-blue, .dark:root {
+    --color-background: #0F172A;
+    --color-foreground: #F8FAFC;
+    --color-card: #1E293B;
+    --color-card-hover: #334155;
+    --color-primary: #60A5FA;
+    --color-primary-hover: #3B82F6;
+    --color-primary-light: #1E3A5F;
+    --color-secondary: #94A3B8;
+    --color-secondary-hover: #CBD5E1;
+    --color-border: #334155;
+    --color-muted: #64748B;
+}
+
+.theme-purple {
+    --color-background: #FAF5FF;
+    --color-foreground: #1E1B4B;
+    --color-card: #FFFFFF;
+    --color-card-hover: #F3E8FF;
+    --color-primary: #8B5CF6;
+    --color-primary-hover: #7C3AED;
+    --color-primary-light: #EDE9FE;
+    --color-secondary: #64748B;
+    --color-secondary-hover: #475569;
+    --color-border: #E9D5FF;
+    --color-muted: #A78BFA;
+}
+
+.theme-purple.dark {
+    --color-background: #1E1B4B;
+    --color-foreground: #FAF5FF;
+    --color-card: #312E81;
+    --color-card-hover: #3730A3;
+    --color-primary: #A78BFA;
+    --color-primary-hover: #8B5CF6;
+    --color-primary-light: #2E1065;
+    --color-secondary: #94A3B8;
+    --color-secondary-hover: #CBD5E1;
+    --color-border: #4C1D95;
+    --color-muted: #7C3AED;
+}
+
+.theme-green {
+    --color-background: #F0FDF4;
+    --color-foreground: #14532D;
+    --color-card: #FFFFFF;
+    --color-card-hover: #DCFCE7;
+    --color-primary: #10B981;
+    --color-primary-hover: #059669;
+    --color-primary-light: #D1FAE5;
+    --color-secondary: #64748B;
+    --color-secondary-hover: #475569;
+    --color-border: #BBF7D0;
+    --color-muted: #34D399;
+}
+
+.theme-green.dark {
+    --color-background: #052E16;
+    --color-foreground: #F0FDF4;
+    --color-card: #14532D;
+    --color-card-hover: #166534;
+    --color-primary: #34D399;
+    --color-primary-hover: #10B981;
+    --color-primary-light: #064E3B;
+    --color-secondary: #94A3B8;
+    --color-secondary-hover: #CBD5E1;
+    --color-border: #166534;
+    --color-muted: #059669;
+}
+
